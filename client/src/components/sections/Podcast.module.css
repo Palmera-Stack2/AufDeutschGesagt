@@ -1,0 +1,249 @@
+.podcast {
+    position: relative;
+}
+
+.podcastHeader {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+    margin-top: 80px;
+}
+
+.podcastHeader h1 {
+    font-weight: 300;
+
+}
+
+.podcastHeader h3 {
+    font-size: 2vw;
+}
+
+
+
+
+.hrDiv {
+    display: flex;
+    justify-content: center;
+    margin: 10px 50px;
+
+
+}
+
+.podcastHr {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+
+}
+
+
+.headphonesWrapper {
+
+    width: 100%;
+    display: flex;
+
+}
+
+.headphones {
+    font-size: 2.5rem;
+    padding-top: 50px;
+    padding-left: 200px;
+}
+
+.podcastContainer {
+    margin: 100px;
+    justify-content: center;
+    display: flex;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+
+.boxCard {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 150%;
+    width: 500px;
+    height: 600px;
+
+}
+
+.play {
+    font-size: 3rem;
+    padding: 20px;
+    margin-left: 130px;
+    margin-bottom: 50px;
+
+}
+
+.play:hover {
+    cursor: pointer;
+    color: #dcdcdc;
+}
+
+
+
+.boxImage {
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    margin-bottom: 350px;
+    margin-left: 350px;
+
+}
+
+.boxCard img {
+    margin: 20px;
+}
+
+.boxcardText {
+    align-self: baseline;
+    width: 100%;
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.boxcardText p {
+    font-size: 1.5rem;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+
+.podcastButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.podcastButton button {
+    background-color: #fece00;
+    color: #444;
+    padding: 15px;
+
+    width: 300px;
+
+}
+
+.socialMedia {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.socialMedia img {
+    width: 100px;
+    height: 100px;
+
+
+}
+
+@media (max-width: 900px) {
+
+    .podcastHeader {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 10px;
+        margin-top: 80px;
+
+        margin-top: 2px;
+    }
+
+    .boxImage {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+        margin-left: 220px;
+
+    }
+
+    .boxImage img {
+        width: 120px;
+        height: 120px;
+
+
+    }
+
+    .play {
+        font-size: 3rem;
+        padding: 20px;
+        margin-left: 60px;
+        margin-bottom: 50px;
+
+    }
+
+
+
+
+    .boxCard {
+        width: 350px;
+        height: 600px;
+
+    }
+
+    .boxCard img {
+        width: 100px;
+        height: 100px;
+
+
+    }
+
+    .podcastButton button {
+
+        margin-top: 50px;
+
+    }
+
+    .headphones {
+        position: absolute;
+        top: 110px;
+        padding-top: 80px;
+        padding-left: 130px;
+
+
+
+    }
+
+
+}
+
+
+@media (max-width: 414px) {
+
+
+    .podcastHeader {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .podcastHeader h1 {
+        font-size: 1.8rem;
+    }
+
+    .headphonesWrapper {
+
+        position: relative;
+
+    }
+
+
+
+
+
+}

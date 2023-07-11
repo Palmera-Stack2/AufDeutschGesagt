@@ -1,0 +1,185 @@
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: black;
+    height: 25vh;
+    margin-bottom: 50px;
+
+}
+
+.navbar-wraper {
+    position: relative;
+    height: 100%;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-menu {
+    display: flex;
+    padding: 90px 100px 0;
+    font-family: 'Roboto', sans-serif;
+
+    list-style: none;
+    font-size: 2rem;
+}
+
+.navbar-menu li {
+    padding: 30px;
+    color: white;
+    font-weight: 300;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.navbar-menu li:hover {
+    color: #fece00;
+    transform: translateY(-5px);
+    font-weight: bold;
+
+}
+
+
+.hrDiv {
+    display: flex;
+    justify-content: center;
+    margin: 50px 80px;
+}
+
+.navbar-underline {
+
+    width: 96%;
+    color: white;
+    position: absolute;
+    bottom: 20%;
+}
+
+.navbar-img {
+    width: 70px;
+    position: absolute;
+    z-index: 1;
+    top: 33%;
+    left: 5%;
+}
+
+.navbar-hamburger {
+
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20%;
+    bottom: 50%;
+    display: none;
+
+}
+
+
+.hamburger-line {
+    width: 35px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: white;
+
+}
+
+.x {
+    cursor: pointer;
+    position: absolute;
+    right: 20%;
+    bottom: 50%;
+    display: none;
+
+}
+
+.fontawesomeX:hover {
+    background-color: darkgray;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+
+
+.fontawesomeX {
+    /* color: #fece00; */
+    color: white;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-hamburger {
+        display: flex;
+
+    }
+
+    .navbar-hamburger-hide {
+        display: none;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-menu.open {
+        padding-top: 150px;
+        line-height: 25px;
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(214, 33%, 46%);
+        opacity: 80%;
+        align-items: center;
+        width: 100%;
+        height: 140vh;
+
+    }
+
+    .navbar-menu li {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .navbar-menu li:hover {
+        color: #fece00;
+
+    }
+
+    .x {
+        display: flex;
+    }
+
+    .navbar-underline {
+        display: none;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .navbar-img {
+        top: 30%;
+        left: 15%;
+        width: 40px;
+
+    }
+
+
+
+}
+
+@media (max-width: 420px) {
+    .navbar-img {
+        top: 25%;
+        left: 15%;
+        width: 50px;
+
+    }
+
+}

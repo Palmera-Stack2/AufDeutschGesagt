@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.heroImage {
+
+    width: 100%;
+    min-height: 110vh;
+    background-image: url("../src/assets/hero-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width: 900px) {
+    .heroImage {
+        background-size: cover;
+        background-position: 0% 93%;
+        background-repeat: no-repeat;
+        min-height: 95vh;
+
+    }
+
+}
+
+@media (max-width: 820px) {
+    .heroImage {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 85vh;
+
+    }
+
+}
+
+@media (max-width: 700px) {
+    .heroImage {
+        background-position: 0% 75%;
+        min-height: 55vh;
+    }
+
+}
+
+@media (max-width: 667px) {
+    .heroImage {
+        background-size: cover;
+        min-height: 85vh;
+    }
+
+}
+
+
+
+@media (max-width: 500px) {
+    .heroImage {
+        background-size: contain;
+        background-position: 0% 50%;
+        min-height: 75vh;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .heroImage {
+        background-size: contain;
+        background-position: 0% 80%;
+        min-height: 58vh;
+    }
+
+}
