@@ -2,17 +2,22 @@ import cors from "cors";
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-import { StatusCodes } from "http-status-codes";
+import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
+import { StatusCodes } from "http-status-codes";
 import passport from "passport";
 import { configureJwtStrategy } from "./routes/passport-config.js";
 import userRoutes from "./routes/userRoutes.js";
 import commentRoutes from "./routes/commentRoutes.js";
 import postRoutes from "./routes/postRoutes.js";
+import fileRoutes from "./routes/fileRoutes.js";
 
 dotenv.config();
 
 const app = express();
+app.use(express.static("client"));
+
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
   cors({
     credentials: true,
@@ -45,6 +50,9 @@ mongoose
 app.use("/api/user", userRoutes);
 app.use("/api/comment", commentRoutes);
 app.use("/api/post", postRoutes);
+app.use("/api/files", fileRoutes);
+//the files inside the folder will be served by our server
+app.use("/uploads", express.static("./uploads"));
 
 app.all("*", (req, res) => {
   return res.status(StatusCodes.NOT_FOUND).json({ message: "Invalid path" });
