@@ -7,8 +7,31 @@ import Comment from "../models/Comment.js";
  */
 export const OwnerListComment = async (req, res) => {
   try {
-    const comments = await Comment.find();
-    return res.status(StatusCodes.OK).json(comments);
+    const unreadComments = await Comment.find({ isRead: false });
+
+    for (const comment of unreadComments) {
+      comment.isRead = true;
+      await comment.save();
+    }
+    // const page = parseInt(req.query.page) || 1;
+    // const limit = 3;
+    // const skip = (page - 1) * limit;
+    // const totalComments = await Comment.countDocuments();
+
+    const updatedComments = await Comment.find();
+
+    return res.status(StatusCodes.OK).json(updatedComments);
+  } catch (error) {
+    return res
+      .status(StatusCodes.INTERNAL_SERVER_ERROR)
+      .json({ message: error.toString() });
+  }
+};
+export const OwnerUnReadComment = async (req, res) => {
+  try {
+    const comments = await Comment.find({ isRead: false });
+
+    return res.status(StatusCodes.OK).json(comments.length);
   } catch (error) {
     return res
       .status(StatusCodes.INTERNAL_SERVER_ERROR)
@@ -68,7 +91,7 @@ export const deleteCommentById = async (req, res) => {
 
     return res
       .status(StatusCodes.OK)
-      .json({ message: "comment deleted", deletedUser: user });
+      .json({ message: "comment deleted", deletedUser: comment });
   } catch (error) {
     return res
       .status(StatusCodes.INTERNAL_SERVER_ERROR)
@@ -79,7 +102,7 @@ export const deleteCommentById = async (req, res) => {
 export const rating = async (req, res) => {
   try {
     // Fetch all comments from the database
-    const comments = await Comment.findAll();
+    const comments = await Comment.find();
 
     // Calculate the average rating
     const totalRatings = comments.reduce(
