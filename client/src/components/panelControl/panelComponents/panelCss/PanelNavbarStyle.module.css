@@ -1,0 +1,49 @@
+.panelNavbar {
+  display: flex;
+  gap: 5px;
+  justify-content: right;
+  margin-top: 20px;
+  margin-right: 10%;
+  font-size: 1rem;
+}
+.link {
+  background-color: #908b8b;
+  width: 99px;
+  height: 30px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+.btn_logout {
+  background-color: #908b8b;
+  padding: 5px;
+  width: 100px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+@media only screen and (max-width: 375px) {
+  .panelNavbar {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    justify-items: center;
+    margin: 10%;
+    font-size: 0.6rem;
+  }
+  .link {
+    background-color: #908b8b;
+    width: 80px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .btn_logout {
+    background-color: #908b8b;
+    padding: 3px;
+    width: 90px;
+    color: white;
+    border-radius: 5px;
+  }
+}
