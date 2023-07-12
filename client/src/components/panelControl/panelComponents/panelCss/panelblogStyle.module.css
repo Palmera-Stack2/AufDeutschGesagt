@@ -1,0 +1,197 @@
+.hero_blog {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  clear: both;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.right_blog {
+  background-color: #fff9f9;
+  min-height: 95vh;
+  width: 1600px;
+  margin-right: 0;
+  margin-top: 30px;
+  text-align: right;
+}
+.right_blog h2 {
+  margin-top: 15px;
+  margin-right: 10%;
+}
+.right_blog hr {
+  width: 100%;
+}
+.right_blog .container_blog {
+  height: 40vh;
+  background-color: #d9d9d9;
+  margin-left: 10%;
+  margin-top: 10px;
+  width: 1300px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper_blog {
+  width: 99%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container_blog .div_blog {
+  position: relative;
+  width: 90%;
+  height: auto;
+  flex-direction: row-reverse;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+.div_blog .blog_content {
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.div_blog .faPenToSquare {
+  position: absolute;
+  left: 9px;
+  top: 5px;
+  font-size: 1.5rem;
+}
+.div_blog .xicon {
+  text-align: center;
+  font-size: 1.5rem;
+  color: red;
+}
+.div_blog button {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+}
+.right_blog .form {
+  height: 40vh;
+  background-color: #d9d9d9;
+  margin-left: 10%;
+  margin-top: 25px;
+  width: 1300px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.right_blog .form textarea {
+  border: 0.5rem solid black;
+  padding-top: 10px;
+  width: 80%;
+  height: 250px;
+  flex-direction: row-reverse;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+.right_blog .form button {
+  background-color: #fece00;
+}
+
+.left_blog {
+  min-height: 95vh;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.left_blog h2 {
+  margin-top: 70px;
+}
+.left_blog hr {
+  margin-top: 24.9px;
+  text-align: center;
+  width: 80%;
+}
+.left_blog h3 {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 375px) {
+  .hero_blog {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .left_blog {
+    display: none;
+  }
+  .right_blog {
+    background-color: #fff9f9;
+    width: 100%;
+    height: 99vh;
+    margin: 0px;
+    text-align: center;
+  }
+  .right_blog h2 {
+    font-size: 0.9rem;
+  }
+
+  .right_blog .container_blog {
+    margin-left: 2.5%;
+    width: 95%;
+    height: 40vh;
+    font-size: 0.7rem;
+  }
+  .container_blog .div_blog {
+    height: auto;
+  }
+  .container_blog .div_blog .blog_content {
+    font-size: 00.9rem;
+  }
+
+  .div_blog .faPenToSquare {
+    top: 5px;
+    font-size: 1rem;
+  }
+  .div_blog .xicon {
+    font-size: 1rem;
+  }
+  .div_blog button {
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+  }
+  .right_blog .form {
+    margin-left: 2.5%;
+    width: 95%;
+    height: 30vh;
+    font-size: 0.7rem;
+  }
+  .right_blog .form textarea {
+    height: 125px;
+    margin-top: 10px;
+  }
+}
