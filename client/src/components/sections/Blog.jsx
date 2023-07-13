@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { FaBlog } from 'react-icons/fa';
 import Boat from '/assets/Robin am Hafen.jpg';
 import '../sections/Blog.css'
