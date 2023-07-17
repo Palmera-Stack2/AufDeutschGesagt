@@ -1,7 +1,11 @@
-export default function Blog() {
-  return (
-    <div id="blog" className="page-section">
-      Blog
-    </div>
-  );
+import React, { Component } from 'react'
+
+export class Blog extends Component {
+  render() {
+    return (
+      <div>Blog</div>
+    )
+  }
 }
+
+export default Blog

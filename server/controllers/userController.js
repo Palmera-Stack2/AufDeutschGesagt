@@ -4,22 +4,6 @@ import User from "../models/User.js";
 import { generateToken } from "../helpers/authHelper.js";
 
 /**
- * Controller method to get a list of users from the users collection.
- * @param {*} req
- * @param {*} res
- */
-export const listUsers = async (req, res) => {
-  try {
-    const users = await User.find();
-    return res.status(StatusCodes.OK).json(users);
-  } catch (error) {
-    return res
-      .status(StatusCodes.INTERNAL_SERVER_ERROR)
-      .json({ message: error.toString() });
-  }
-};
-
-/**
  * Controller method to insert a new user into the users collection
  * @param {*} req
  * @param {*} res

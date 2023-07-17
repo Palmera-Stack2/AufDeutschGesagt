@@ -1,0 +1,78 @@
+.ratingSection {
+  height: 100vh;
+  width: 100vw;
+}
+
+.hrDiv {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  width: inherit;
+}
+.Hr {
+  width: 80%;
+  font: rgb(255, 253, 253);
+}
+.ratingWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+.ratingHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 20%;
+}
+.ratingContainer {
+}
+.ratingCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  height: 500px;
+  border-radius: 1.5rem;
+  margin-top: 10%;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cardHeader h4 {
+  margin-right: 10px;
+}
+
+.ratingText {
+  margin-top: 40%;
+  font-size: medium;
+}
+
+.ratingStars {
+  display: flex;
+  align-items: center;
+  color: #fece00;
+}
+
+.starIcon {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .h3
+   {
+    margin-bottom: 5px;
+  }
+}

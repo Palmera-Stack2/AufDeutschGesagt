@@ -1,16 +1,29 @@
 import express from "express";
+import passport from "passport";
 import {
   createPost,
-  deletePostId,
+  deletePostById,
   ListPost,
   OwnerListPost,
 } from "../controllers/postController.js";
 
 const router = express.Router();
 
-router.get("/owner/list", OwnerListPost),
-  router.delete("/owner/:id", deletePostId),
-  router.post("/owner/create", createPost),
+router.get(
+  "/owner/list",
+  passport.authenticate("jwt", { session: false }),
+  OwnerListPost
+),
+  router.delete(
+    "/owner/delete/:id",
+    passport.authenticate("jwt", { session: false }),
+    deletePostById
+  ),
+  router.post(
+    "/owner/create",
+    passport.authenticate("jwt", { session: false }),
+    createPost
+  ),
   router.get("/user/list", ListPost);
 
 export default router;

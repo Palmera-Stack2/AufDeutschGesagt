@@ -1,20 +1,18 @@
-// import { createContext, useState } from "react";
-// import image from "../assets/hero-image.jpg";
+import { createContext, useState } from "react";
 
+export const DataContext = createContext();
 
-// export const DataContext = createContext();
+export default function DataContextProvider({ children }) {
+  const [heroImage, setHeroImage] = useState("");
 
-// export default function DataContextProvider({ children }) {
-//     const [heroImage, setHeroImage] = useState(image);
-
-//     return (
-//         <DataContext.Provider
-//             value={{
-//                 heroImage,
-//                 setHeroImage,
-//             }}
-//         >
-//             {children}
-//         </DataContext.Provider>
-//     );
-// }
+  return (
+    <DataContext.Provider
+      value={{
+        heroImage,
+        setHeroImage,
+      }}
+    >
+      {children}
+    </DataContext.Provider>
+  );
+}

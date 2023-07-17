@@ -1,0 +1,131 @@
+.commentSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.commentContent {
+  width: 100%;
+  height: 90vh;
+  padding: 20px;
+  background-color: #f5f5f5;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+h3,
+h2 {
+  margin-bottom: 70px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align form elements vertically */
+  justify-content: space-evenly;
+  height: 80%;
+}
+
+.label-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+
+  resize: vertical;
+}
+.textArea {
+  height: 150px;
+}
+
+
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button {
+  background-color: #f1e20d;
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+.hrDiv {
+  margin: 20px 0;
+}
+
+.Hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons a {
+  margin: 0 8px;
+  color: #007bff;
+  font-size: 24px;
+  transition: color 0.2s;
+}
+
+.icons a:hover {
+  color: #0056b3;
+}
+.star {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.starFilled {
+  color: #ffbb00;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align form elements vertically */
+    justify-content: space-evenly;
+  }
+
+  .Hr {
+    border: none;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 40px;
+  }
+}
+

@@ -1,0 +1,131 @@
+.hero_login {
+  height: 100vh;
+  width: 100vw;
+  margin-top: 0;
+  padding: 0;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 1.5rem;
+}
+.right_login {
+  background-color: #fff9f9;
+  width: 1200px;
+  height: 95%;
+  margin-right: 0;
+  margin-top: 30px;
+  text-align: right;
+}
+
+.login_form {
+  margin-left: 10%;
+  margin-top: 8%;
+  width: 1000px;
+  height: 65vh;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 35px;
+}
+.login_form input {
+  background-color: #d9d9d9;
+  width: 411.59px;
+  height: 61.41px;
+  border-radius: 50px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+}
+.login_form button {
+  background-color: #fece00;
+  width: 411.59px;
+  height: 61.41px;
+}
+
+.left_login {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+.left_login h3 {
+  margin-bottom: 100px;
+}
+.left_login .lockicon {
+  margin-left: 10px;
+}
+.left_login img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.left_login h2 {
+  margin-top: 100px;
+}
+@media only screen and (max-width: 375px) {
+  .hero_login {
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    font-size: 1rem;
+  }
+  .right_login {
+    background-color: #fff9f9;
+    width: 90%;
+    height: 70vh;
+    margin: 0px;
+    margin: 0 auto;
+  }
+
+  .right_login .login_form {
+    margin-top: 90px;
+    margin-left: 2.5%;
+    width: 95%;
+    height: 30vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+  }
+  .login_form input {
+    width: 311.59px;
+    height: 61.41px;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+  }
+  .login_form button {
+    background-color: #fece00;
+    width: 311.59px;
+    height: 61.41px;
+  }
+
+  .left_login {
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    position: relative;
+  }
+  .left_login .left_container {
+    margin: 0 auto;
+  }
+  .left_login h3 {
+    margin-bottom: 5px;
+  }
+
+  .left_login img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .left_login h2 {
+    display: none;
+  }
+}
