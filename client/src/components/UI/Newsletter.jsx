@@ -44,16 +44,18 @@ const Newsletter = () => {
                 <div className={newsLetterStyle.privacyPolicyDiv}>
                     <h3>Datenschutzerklärung</h3>
                     <p className={newsLetterStyle.paragraphPolicy}>
-                        Datenschutzerklärung von Site #1
-                        Um Informationen zu den personenbezogenen Daten, dem Zweck und den Parteien, welchen diese Daten mitgeteilt werden, zu erhalten, kontaktieren Sie den Eigentümer
+                        <strong>Datenschutzerklärung von Site #1</strong> <br />
 
-                        Anbieter und Verantwortlicher
+                        Um Informationen zu den personenbezogenen Daten, dem Zweck und den Parteien, welchen diese Daten mitgeteilt werden, zu erhalten, kontaktieren Sie den Eigentümer<br />
+                        <hr />
+                        <br />
+                        <strong>Anbieter und Verantwortlicher</strong>   <br />
                         Auf Deutsch Gesagt, Augusterburger Ufer 6 22049
-                        Hamburg
+                        Hamburg<br />
 
-                        E-Mail-Adresse des Anbieters: auf-deutsch-gesagt@gmx.de
-
-                        Arten der erhobenen Daten
+                        E-Mail-Adresse des Anbieters: <strong>auf-deutsch-gesagt@gmx.de</strong><br />
+                        <hr />
+                        <br /><strong>Arten der erhobenen Daten</strong><br />
                         Der Eigentümer stellt keine Auflistung der erhobenen personenbezogenen Daten zur Verfügung.
 
                         Vollständige Details zu jeder Art von verarbeiteten personenbezogenen Daten werden in den dafür vorgesehenen Abschnitten dieser Datenschutzerklärung oder punktuell durch Erklärungstexte bereitgestellt, die vor der Datenerhebung angezeigt werden.
@@ -62,21 +64,21 @@ const Newsletter = () => {
                         Nutzer, die sich darüber im Unklaren sind, welche personenbezogenen Daten obligatorisch sind, können sich an den Anbieter wenden.
                         Jegliche Verwendung von Cookies – oder anderer Tracking-Tools – durch diese Anwendung oder Anbieter von Drittdiensten, die durch diese Anwendung eingesetzt werden, dient dem Zweck, den vom Nutzer gewünschten Dienst zu erbringen, und allen anderen Zwecken, die im vorliegenden Dokument und, falls vorhanden, in der Cookie-Richtlinie beschrieben sind.
 
-                        Die Nutzer sind für alle personenbezogenen Daten Dritter verantwortlich, die durch diese Anwendung beschafft, veröffentlicht oder weitergegeben werden, und bestätigen, dass sie die Zustimmung zur Übermittlung personenbezogener Daten etwaiger Dritter an diese Anwendung eingeholt haben.
-
-                        Art und Ort der Datenverarbeitung
-                        Verarbeitungsmethoden
+                        Die Nutzer sind für alle personenbezogenen Daten Dritter verantwortlich, die durch diese Anwendung beschafft, veröffentlicht oder weitergegeben werden, und bestätigen, dass sie die Zustimmung zur Übermittlung personenbezogener Daten etwaiger Dritter an diese Anwendung eingeholt haben.<br />
+                        <hr />
+                        <br /><strong>Art und Ort der Datenverarbeitung</strong><br />
+                        <br /><strong>Verarbeitungsmethoden</strong><br />
                         Der Anbieter verarbeitet die Nutzerdaten auf ordnungsgemäße Weise und ergreift angemessene Sicherheitsmaßnahmen, um den unbefugten Zugriff und die unbefugte Weiterleitung, Veränderung oder Vernichtung von Daten zu vermeiden.
-                        Die Datenverarbeitung wird mittels Computern oder IT-basierten Systemen nach organisatorischen Verfahren und Verfahrensweisen durchgeführt, die gezielt auf die angegebenen Zwecke abstellen. Zusätzlich zum Verantwortlichen könnten auch andere Personen intern (Personalverwaltung, Vertrieb, Marketing, Rechtsabteilung, Systemadministratoren) oder extern – und in dem Fall soweit erforderlich, vom Verantwortlichen als Auftragsverarbeiter benannt (wie Anbieter technischer Dienstleistungen, Zustellunternehmen, Hosting-Anbieter, IT-Unternehmen oder Kommunikationsagenturen) - diese Anwendung betreiben und damit Zugriff auf die Daten haben. Eine aktuelle Liste dieser Beteiligten kann jederzeit vom Anbieter verlangt werden.
+                        Die Datenverarbeitung wird mittels Computern oder IT-basierten Systemen nach organisatorischen Verfahren und Verfahrensweisen durchgeführt, die gezielt auf die angegebenen Zwecke abstellen. Zusätzlich zum Verantwortlichen könnten auch andere Personen intern (Personalverwaltung, Vertrieb, Marketing, Rechtsabteilung, Systemadministratoren) oder extern – und in dem Fall soweit erforderlich, vom Verantwortlichen als Auftragsverarbeiter benannt (wie Anbieter technischer Dienstleistungen, Zustellunternehmen, Hosting-Anbieter, IT-Unternehmen oder Kommunikationsagenturen) - diese Anwendung betreiben und damit Zugriff auf die Daten haben. Eine aktuelle Liste dieser Beteiligten kann jederzeit vom Anbieter verlangt werden.<br />
 
-                        Rechtsgrundlagen der Verarbeitung
-                        Der Anbieter darf personenbezogene Daten von Nutzern nur dann verarbeiten, wenn einer der folgenden Punkte zutrifft:
+                        <br /><strong>Rechtsgrundlagen der Verarbeitung</strong>
+                        <br />Der Anbieter darf personenbezogene Daten von Nutzern nur dann verarbeiten, wenn einer der folgenden Punkte zutrifft:<br />
 
-                        Die Nutzer haben ihre Einwilligung für einen oder mehrere bestimmte Zwecke erteilt. Hinweis: In einigen Gesetzgebungen kann es dem Anbieter gestattet sein, personenbezogene Daten zu verarbeiten, bis der Nutzer einer solchen Verarbeitung widerspricht („Opt-out“), ohne sich auf die Einwilligung oder eine andere der folgenden Rechtsgrundlagen verlassen zu müssen. Dies gilt jedoch nicht, wenn die Verarbeitung personenbezogener Daten dem europäischen Datenschutzrecht unterliegt;
-                        die Datenerhebung ist für die Erfüllung eines Vertrages mit dem Nutzer und/oder für vorvertragliche Maßnahmen daraus erforderlich;
-                        die Verarbeitung ist für die Erfüllung einer rechtlichen Verpflichtung, der der Anbieter unterliegt, erforderlich;
-                        die Verarbeitung steht im Zusammenhang mit einer Aufgabe, die im öffentlichen Interesse oder in Ausübung hoheitlicher Befugnisse, die dem Anbieter übertragen wurden, durchgeführt wird;
-                        die Verarbeitung ist zur Wahrung der berechtigten Interessen des Anbieters oder eines Dritten erforderlich.
+                        <br /><li>Die Nutzer haben ihre Einwilligung für einen oder mehrere bestimmte Zwecke erteilt. Hinweis: In einigen Gesetzgebungen kann es dem Anbieter gestattet sein, personenbezogene Daten zu verarbeiten, bis der Nutzer einer solchen Verarbeitung widerspricht („Opt-out“), ohne sich auf die Einwilligung oder eine andere der folgenden Rechtsgrundlagen verlassen zu müssen. Dies gilt jedoch nicht, wenn die Verarbeitung personenbezogener Daten dem europäischen Datenschutzrecht unterliegt;</li>
+                        <li> die Datenerhebung ist für die Erfüllung eines Vertrages mit dem Nutzer und/oder für vorvertragliche Maßnahmen daraus erforderlich;</li>
+                        <li>die Verarbeitung ist für die Erfüllung einer rechtlichen Verpflichtung, der der Anbieter unterliegt, erforderlich;</li>
+                        <li> die Verarbeitung steht im Zusammenhang mit einer Aufgabe, die im öffentlichen Interesse oder in Ausübung hoheitlicher Befugnisse, die dem Anbieter übertragen wurden, durchgeführt wird;</li>
+                        <li>die Verarbeitung ist zur Wahrung der berechtigten Interessen des Anbieters oder eines Dritten erforderlich.</li><br />
                         In jedem Fall erteilt der Anbieter gerne Auskunft über die konkrete Rechtsgrundlage, auf der die Verarbeitung beruht, insbesondere darüber, ob die Angabe personenbezogener Daten eine gesetzliche oder vertragliche Verpflichtung oder eine Voraussetzung für den Abschluss eines Vertrages ist.
 
                         Ort
