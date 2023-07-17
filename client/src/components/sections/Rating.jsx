@@ -6,7 +6,7 @@ export default function Rating() {
     <div id="rating" className={ratingStyle.ratingSection}>
       <div className={ratingStyle.ratingContainer}>
         <div className={ratingStyle.ratingHeader}>
-          <h3>what my student saying about me</h3>
+          <h3 className={ratingStyle.h3}>what my student saying about me</h3>
         </div>
         <div className={ratingStyle.hrDiv}>
           <hr className={ratingStyle.Hr} />
