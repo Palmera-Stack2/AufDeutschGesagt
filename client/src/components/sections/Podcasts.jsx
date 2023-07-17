@@ -60,7 +60,7 @@ export default function Podcasts() {
 
 
         </div>
-        <audio ref={audioRef} src="../src/assets/audio.mp3" />
+        <audio ref={audioRef} src="../src/assets/Vorstellung.mp3" />
       </div>
 
       {/* <div className={podcastStyle.socialMedia}><img src='../src/assets/acastLogo2.png'></img ><img src='../src/assets/patreon.png'></img>
