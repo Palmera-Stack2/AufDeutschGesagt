@@ -5,7 +5,7 @@ const Support = () => {
   return (
     <div className={supportStyle.paymentSection}>
       <div className={supportStyle.header}>
-        <h4 className={supportStyle.headOne}>"Your Support makes a Difference"</h4>
+        <h4 className={supportStyle.headOne}>&quot;Your Support makes a Difference&quot;</h4>
       </div>
       <div className={supportStyle.buttons}>
         <div className={supportStyle.btnOne}>
