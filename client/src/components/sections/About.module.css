@@ -100,7 +100,7 @@ iframe {
     margin-top: 50px;
 }
 
-@media (max-width: 1330px) {
+@media (max-width: 2100px) {
 
 
     .wrapper {
@@ -177,10 +177,6 @@ iframe {
 
         }
 
-
-        .aboutHeader h1 {
-            font-size: 1.8rem;
-        }
 
         .videoDiv {
             width: 345px;
