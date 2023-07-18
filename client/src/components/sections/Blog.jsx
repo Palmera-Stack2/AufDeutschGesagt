@@ -1,56 +1,96 @@
-import React, { useState } from 'react';
-import { FaBlog } from 'react-icons/fa';
-import Boat from '/assets/Robin am Hafen.jpg';
-import '../sections/Blog.css'
+import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBlog } from "@fortawesome/free-solid-svg-icons";
+import HafenImage from '../../assets/Hafen.jpg';
+import blogStyle from './Blog.module.css';
 
 function Blog() {
   const [showText, setShowText] = useState(false);
-  const [isClicked, setIsClicked] = useState('Read More');
+  const [isClicked, setIsClicked] = useState(true);
+
 
   const handleReadMore = () => {
     setShowText(!showText);
-    setIsClicked('Read More');
+    setIsClicked('Read Less');
   };
 
   return (
-    <div className='container mt-5'>
-      <div className='row'>
-        <div className='col'>
-          <FaBlog size={35} />
+    <div className={blogStyle.blogSection} >
+      <div  className={blogStyle.blogHeader}>
+        <div>
+          <FontAwesomeIcon className={blogStyle.iconBlog} icon={faBlog} size="2x" />
         </div>
-        <div className='col'>
-          <h4 className='text-end'>Blog</h4>
-        </div>
+        <div className={blogStyle.blogHeader} >
+          <h4 className={blogStyle.heading}>Blog</h4>
+        </div> 
       </div>
-      <hr className='first-hr'/>
-      <div className='row' style={{ marginTop: '50px' }}>
-        <div className='col-sm-4'>
-          <img className='slide' src={Boat} alt='First slide' />
+        <div className={blogStyle.hrDiv}>
+          <hr className={blogStyle.Hr} />
         </div>
-        <div className='col-sm-8'>
-          <h6 style={{ marginLeft: '-15px' }}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. In assumenda officia ad illum fugiat. Soluta in ea
-            ipsam officia nihil neque veniam vel voluptatum voluptates inventore! Laudantium quibusdam corporis nulla!
-          </h6>
-          <button
-            className='read-more-btn'
-            style={{ backgroundColor: '#D4D3D3', color: '#000000', marginTop: '30px' }}
-            onClick={handleReadMore}
-          >
-            {isClicked ? 'Read More' : 'Read Less'}
-          </button>
-        </div>
-      </div>
-      <hr className='second-hr' style={{ marginTop: '50px' }} />
-      {showText && (
-        <div style={{ marginTop: '50px' }}>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid distinctio earum accusantium quisquam vel debitis? Labore nobis assumenda exercitationem.</p>
-          <p>consectetur adipiscing elit,</p>
-          <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-      )}
+        <div className={blogStyle.blogContent}>
+          <div className={blogStyle.blogImage}>
+            <img src={HafenImage} alt="Hafen" />
+          </div>
+          <div className={blogStyle.blogText}>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. In assumenda officia ad illum fugiat, assumenda!</p> 
+            <button className={blogStyle.readMoreBtn}
+                onClick={handleReadMore}
+              >
+                {isClicked ? 'Read More ' : 'Read Less'}
+              </button>
+          </div>
+          </div>
+            <div className={blogStyle.line}>
+              <hr className={blogStyle.linee} />
+            </div>
+          {showText && (
+          <div className={blogStyle.para}>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid distinctio earum accusantium quisquam vel debitis? Labore nobis assumenda exercitationem, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid distinctio earum accusantium quisquam vel debitis?.</p>
+          </div>
+          )}
     </div>
   );
 }
 
 export default Blog;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ {/* <div className='container-2'>
+            <div className='image'>
+              <img src={HafenImage} alt="Hafen" />
+            </div>
+          </div>  
+            <div className='content'>
+              <h6>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In assumenda officia ad illum fugiat. Soluta in ea
+                ipsam officia nihil neque veniam vel voluptatum voluptates inventore! Laudantium quibusdam corporis nulla!
+              </h6>
+              <button className='read-more-btn'
+                onClick={handleReadMore}
+              >
+                {isClicked ? 'Read More' : 'Read Less'}
+              </button>
+            </div>
+        <hr className='second-hr' />
+        {showText && (
+        <div className='para'>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid distinctio earum accusantium quisquam vel debitis? Labore nobis assumenda exercitationem.</p>
+          <p>consectetur adipiscing elit,</p>
+          <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        )} */}
