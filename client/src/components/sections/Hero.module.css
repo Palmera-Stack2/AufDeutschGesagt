@@ -59,8 +59,8 @@
 @media (max-width: 500px) {
     .heroImage {
         background-size: contain;
-        background-position: 0% 50%;
-        min-height: 75vh;
+        background-position: 0% 80%;
+        min-height: 38vh;
     }
 
 }
@@ -69,7 +69,7 @@
     .heroImage {
         background-size: contain;
         background-position: 0% 80%;
-        min-height: 58vh;
+        min-height: 46vh;
     }
 
 }

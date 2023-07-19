@@ -51,7 +51,9 @@ export default function Footer() {
           </a>
         </div>
 
-        <Newsletter />
+        <div className={footerStyle.newsLetterDiv}>
+          <Newsletter />
+        </div>
       </div>
 
       <div className={footerStyle.copyright}>
