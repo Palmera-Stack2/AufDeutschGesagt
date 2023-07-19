@@ -37,7 +37,10 @@ export default function Footer() {
 
         </div>
 
-        <Newsletter />
+        <div className={footerStyle.newsLetterDiv} >
+          <Newsletter />
+        </div>
+
 
       </div>
 

@@ -1,15 +1,20 @@
 .aboutHeader {
+    margin-top: 50px;
+    margin-bottom: 20px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 150px;
-    margin-top: 80px;
+    width: 100%;
 
 }
 
+.aboutHeader h2 {
+
+    margin-bottom: 10px;
+}
+
 .aboutHeader h1 {
-    font-weight: 300;
+    font-size: 3.2em;
 }
 
 .textAbout h3,
@@ -20,7 +25,7 @@ p {
 .hrDiv {
     display: flex;
     justify-content: center;
-    margin: 10px 50px;
+    margin: 0 80px;
 
 
 }
@@ -40,7 +45,6 @@ p {
     grid-gap: 20px;
     background-color: #fff;
     color: #444;
-    margin-top: 100px;
     padding: 0 100px;
 
 }
@@ -70,7 +74,7 @@ p {
     width: 740px;
     height: 542px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 iframe {
@@ -96,11 +100,12 @@ iframe {
 
 .textAbout button {
     background-color: #fece00;
-    color: #444;
+    color: gray;
     margin-top: 50px;
+    width: 200px;
 }
 
-@media (max-width: 2100px) {
+@media (max-width: 1800px) {
 
 
     .wrapper {
@@ -129,20 +134,24 @@ iframe {
 
     }
 
+    .aboutHeader h2 {
+        margin-top: none;
+    }
+
+
 }
 
 @media (max-width: 667px) {
 
     .aboutHeader {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 10px;
-        margin-top: 80px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
-
-    .wrapper {
-        margin-top: 1px;
+    .aboutHeader h2 {
+        margin-top: none;
+        font-size: 1.5rem;
     }
 
     .videoDiv {
@@ -160,6 +169,23 @@ iframe {
     .textAbout {
 
         padding: 10px;
+
+
+    }
+
+    .hrDiv {
+        margin: 0 30px;
+
+
+    }
+
+    .aboutHeader h2 {
+        margin-bottom: none;
+    }
+
+
+    .hrDiv {
+        margin-bottom: none;
 
 
     }
@@ -199,4 +225,7 @@ iframe {
 
 
     }
+
+
+
 }

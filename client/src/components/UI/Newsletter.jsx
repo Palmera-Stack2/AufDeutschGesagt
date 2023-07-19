@@ -79,9 +79,9 @@ const Newsletter = () => {
                         <li>die Verarbeitung ist für die Erfüllung einer rechtlichen Verpflichtung, der der Anbieter unterliegt, erforderlich;</li>
                         <li> die Verarbeitung steht im Zusammenhang mit einer Aufgabe, die im öffentlichen Interesse oder in Ausübung hoheitlicher Befugnisse, die dem Anbieter übertragen wurden, durchgeführt wird;</li>
                         <li>die Verarbeitung ist zur Wahrung der berechtigten Interessen des Anbieters oder eines Dritten erforderlich.</li><br />
-                        In jedem Fall erteilt der Anbieter gerne Auskunft über die konkrete Rechtsgrundlage, auf der die Verarbeitung beruht, insbesondere darüber, ob die Angabe personenbezogener Daten eine gesetzliche oder vertragliche Verpflichtung oder eine Voraussetzung für den Abschluss eines Vertrages ist.
+                        In jedem Fall erteilt der Anbieter gerne Auskunft über die konkrete Rechtsgrundlage, auf der die Verarbeitung beruht, insbesondere darüber, ob die Angabe personenbezogener Daten eine gesetzliche oder vertragliche Verpflichtung oder eine Voraussetzung für den Abschluss eines Vertrages ist.<br />
 
-                        Ort
+                        <br />Ort
                         Die Daten werden in der Niederlassung des Anbieters und an allen anderen Orten, an denen sich die an der Datenverarbeitung beteiligten Stellen befinden, verarbeitet.
 
                         Je nach Standort der Nutzer können Datenübertragungen die Übertragung der Daten des Nutzers in ein anderes Land als das eigene beinhalten. Um mehr über den Ort der Verarbeitung der übermittelten Daten zu erfahren, können die Nutzer den Abschnitt mit den ausführlichen Angaben zur Verarbeitung der personenbezogenen Daten konsultieren.
@@ -174,7 +174,7 @@ const Newsletter = () => {
 
                     <button className={newsLetterStyle.newsButton} type='submit'>Sign me Up!</button>
                     {/* <p className={newsLetterStyle.copyright}>&copy; 2023</p> */}
-                    <div>
+                    <div className={newsLetterStyle.privacyPolicyWrapper}>
                         <button onClick={handlePrivacyPolicyClick} className={newsLetterStyle.privacyButton}>
                             Datenschutzerklärung
                         </button>
