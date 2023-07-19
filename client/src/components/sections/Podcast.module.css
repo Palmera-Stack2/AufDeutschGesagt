@@ -1,6 +1,5 @@
 .page-section {
-  height: 100vh;
-  /* width: 100vw; */
+
 }
 .podcastsHeader {
   display: flex;
@@ -53,7 +52,6 @@
   width: 30%;
 }
 .studioImg {
-  border-radius: 50%;
   width: 100px;
   height: 100px;
   object-fit: cover;
@@ -145,7 +143,7 @@
 }
 .browseBtn {
   border-radius: 10px;
-  background-color: #fece00;
+  background-color: #f1e20d;
   color: white;
   font-size: 20px;
   font-weight: bold;
