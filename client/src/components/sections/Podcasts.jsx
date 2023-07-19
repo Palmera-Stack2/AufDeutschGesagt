@@ -5,7 +5,7 @@ import {
   faCirclePlay,
   faCircleStop,
 } from "@fortawesome/free-solid-svg-icons";
-import PodcastCover from "../../assets/PodcastCover.jpg";
+import cover from "../../assets/cover.png";
 import Studio from "../../assets/Studio.jpg";
 
 import { useState, useRef } from "react";
@@ -56,7 +56,7 @@ export default function Podcasts() {
               <div className={podcastsStyle.cardHeader}>
                 <div className={podcastsStyle.cardImg}>
                   <img
-                    src={PodcastCover}
+                    src={cover}
                     alt="podcastCover "
                     className={podcastsStyle.coverImg}
                   />
