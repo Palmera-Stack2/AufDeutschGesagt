@@ -1,31 +1,36 @@
 import { useState } from "react";
 import commentStyle from "./Comment.module.css";
+import axios from "axios";
 
 export default function CommentSection() {
-  const [name, setName] = useState("");
-  const [comment, setComment] = useState("");
   const [rating, setRating] = useState(0);
 
-  const handleNameChange = (event) => {
-    setName(event.target.value);
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const data = {
+      userName: formData.get("userName"),
+      comment: formData.get("comment"),
+      rating: formData.get("rating"),
+    };
+    try {
+      const res = await axios.post("/api/comment/user/create", data);
+      console.log(res.data);
+    } catch (error) {
+      console.error("there was an error", error);
+    }
   };
-
-  const handleCommentChange = (event) => {
-    setComment(event.target.value);
-  };
-
   const handleRatingChange = (selectedRating) => {
+    console.log("Selected rating:", selectedRating);
     setRating(selectedRating);
   };
+  const handleRatingHover = (hoveredRating) => {
+    console.log("Hovered rating:", hoveredRating);
+    setRating(hoveredRating);
+  };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log("Name:", name);
-    console.log("Comment:", comment);
-    console.log("Rating:", rating);
-    setName("");
-    setComment("");
-    setRating(0);
+  const handleRatingLeave = () => {
+    console.log("Left the star area");
   };
 
   const renderStars = () => {
@@ -46,14 +51,6 @@ export default function CommentSection() {
     return stars;
   };
 
-  const handleRatingHover = (hoveredRating) => {
-    setRating(hoveredRating);
-  };
-
-  const handleRatingLeave = () => {
-    setRating(0);
-  };
-
   return (
     <div id="comment-section" className={commentStyle.commentSection}>
       <div className={commentStyle.commentContent}>
@@ -62,27 +59,24 @@ export default function CommentSection() {
         <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              value={name}
-              onChange={handleNameChange}
-              required
-            />
+            <input name="userName" type="text" id="name" required />
           </div>
           <div>
             <label htmlFor="comment">Comment:</label>
             <textarea
+              name="comment"
               className={commentStyle.textArea}
               id="comment"
-              value={comment}
-              onChange={handleCommentChange}
               required
             ></textarea>
           </div>
           <div>
             <label htmlFor="rating">Rating:</label>
-            <div className={commentStyle.ratingStars}>{renderStars()}</div>
+            <div className={commentStyle.ratingStars}>
+              {" "}
+              <input type="hidden" name="rating" value={rating} />
+              {renderStars()}
+            </div>
           </div>
           <button type="submit" className={commentStyle.button}>
             Submit

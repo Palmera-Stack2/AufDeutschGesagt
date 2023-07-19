@@ -7,12 +7,7 @@
   font-size: 1rem;
 }
 .link {
-  background-color: #908b8b;
-  width: 99px;
-  height: 30px;
   color: white;
-  text-align: center;
-  border-radius: 5px;
 }
 .btn_logout {
   background-color: #908b8b;
@@ -31,14 +26,7 @@
     margin: 10%;
     font-size: 0.6rem;
   }
-  .link {
-    background-color: #908b8b;
-    width: 80px;
-    height: 20px;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-  }
+
   .btn_logout {
     background-color: #908b8b;
     padding: 3px;

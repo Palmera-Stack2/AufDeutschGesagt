@@ -26,7 +26,7 @@ export default function Login() {
   return (
     <div className={loginStyle.hero_login}>
       <div className={loginStyle.left_login}>
-        <div className={loginStyle.left_container}>
+        <div className={loginStyle.leftHero_container}>
           <h3>
             Admin Login{" "}
             <FontAwesomeIcon className={loginStyle.lockicon} icon={faLock} />{" "}

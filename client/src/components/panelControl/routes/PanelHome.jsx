@@ -32,22 +32,22 @@ export default function PenelHome() {
   }, []);
 
   return (
-    <div className={style.hero}>
-      <div className={style.left}>
-        <h2>Welcome Robin ! </h2>
-        <hr />
+    <div className={style.hero_home}>
+      <div className={style.left_home}>
+        <h2 className={style.left_homeheader}>Welcome Robin ! </h2>
+        <hr className={style.left_homehr} />
         <p className={style.unReadComments}>{unReadComments}</p>
-        <button>Recived</button>
-        <h3>{dateToday}</h3>
+        <button className={style.left_homebtn}>Recived</button>
+        <h3 className={style.left_homeh3}>{dateToday}</h3>
       </div>
-      <div className={style.right}>
+      <div className={style.right_home}>
         <PanelNavbar />
 
-        <h2>Administrator Panel</h2>
-        <hr />
-        <div className={style.container}>
-          <div className={style.wrapper}>
-            <h3>
+        <h2 className={style.right_homeheader}>Administrator Panel</h2>
+        <hr className={style.right_homehr} />
+        <div className={style.right_homecontainer}>
+          <div className={style.right_homewrapper}>
+            <h3 className={style.right_homeh3}>
               <Link to="/panelcomment">
                 {" "}
                 <FontAwesomeIcon icon={faMessage} className={style.faMessage} />

@@ -17,22 +17,30 @@ export default function PanelNavbar() {
   };
   return (
     <nav className={style.panelNavbar}>
-      <HashLink to={"/panelhome"} className={style.link}>
-        {" "}
-        Home
-      </HashLink>
-      <HashLink to={"/panelblog"} className={style.link}>
-        {" "}
-        Blog{" "}
-      </HashLink>
-      <HashLink to={"/panelcomment"} className={style.link}>
-        {" "}
-        Comments
-      </HashLink>
-      <HashLink to={"/upload"} className={style.link}>
-        {" "}
-        Upload
-      </HashLink>
+      <button className={style.btn_logout}>
+        <HashLink to={"/panelhome"} className={style.link}>
+          {" "}
+          Home
+        </HashLink>
+      </button>
+      <button className={style.btn_logout}>
+        <HashLink to={"/panelblog"} className={style.link}>
+          {" "}
+          Blog{" "}
+        </HashLink>
+      </button>
+      <button className={style.btn_logout}>
+        <HashLink to={"/panelcomment"} className={style.link}>
+          {" "}
+          Comments
+        </HashLink>
+      </button>
+      <button className={style.btn_logout}>
+        <HashLink to={"/upload"} className={style.link}>
+          {" "}
+          Upload
+        </HashLink>
+      </button>
       <button className={style.btn_logout} onClick={handleSignOut}>
         Log out
       </button>

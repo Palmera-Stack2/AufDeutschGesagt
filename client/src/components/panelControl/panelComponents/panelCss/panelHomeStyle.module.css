@@ -1,4 +1,4 @@
-.hero {
+.hero_home {
   height: 100vh;
   width: 100vw;
   margin-top: 0;
@@ -8,7 +8,7 @@
   justify-content: center;
   font-size: 1rem;
 }
-.right {
+.right_home {
   background-color: #fff9f9;
   width: 1600px;
   height: 95%;
@@ -16,14 +16,14 @@
   margin-top: 30px;
   text-align: right;
 }
-.right h2 {
+.right_home .right_homeheader {
   margin-top: 15px;
   margin-right: 10%;
 }
-.right hr {
+.right_home .right_homehr {
   width: 100%;
 }
-.right .container {
+.right_home .right_homecontainer {
   background-color: #d9d9d9;
   margin-left: 10%;
   margin-top: 8%;
@@ -37,14 +37,14 @@
   flex-wrap: nowrap;
 }
 
-.right .container .wrapper {
+.right_homecontainer .right_homewrapper {
   background-color: #ffffff;
   height: 250px;
   width: 1200px;
   text-align: center;
   border-radius: 15px;
 }
-.container .wrapper h3 {
+.right_homewrapper .right_homeh3 {
   margin-top: 50px;
   font-size: 1.5rem;
 }
@@ -64,7 +64,7 @@
   color: black;
 }
 
-.left {
+.left_home {
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -72,18 +72,18 @@
   text-align: center;
   text-align: center;
 }
-.left h2 {
+.left_home .left_homeheader {
   margin-top: 70px;
 }
-.left hr {
+.left_home .left_homehr {
   margin-top: 25.9px;
   width: 80%;
   text-align: center;
 }
-.left h3 {
+.left_home .left_homeh3 {
   margin-top: 20px;
 }
-.left button {
+.left_home .left_homebtn {
   margin-top: 15px;
   background-color: white;
   width: 200px;
@@ -93,7 +93,7 @@
   border-radius: 5px;
   margin-top: 30px;
 }
-.left .unReadComments {
+.left_home .unReadComments {
   background-color: red;
   color: white;
   width: 30px;
