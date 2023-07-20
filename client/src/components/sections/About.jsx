@@ -43,7 +43,7 @@ export default function About() {
           </div>
         </div>
         <div className={aboutStyle.textAbout}>
-          <h3>About Robin</h3>
+          <h3 className={aboutStyle.aboutH3}>About Robin</h3>
           <p>Kurz gesagt:
             Deutscher Muttersprachler
             Master of Education (Universität Hamburg)
