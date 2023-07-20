@@ -17,9 +17,7 @@
   border-radius: 5px;
   text-align: center;
 }
-.btn_logout:hover {
-  color: white;
-}
+
 @media only screen and (max-width: 375px) {
   .panelNavbar {
     display: flex;
