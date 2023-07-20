@@ -1,21 +1,29 @@
 import supportStyle from './Support.module.css';
 
-
 const Support = () => {
   return (
-    <div className={supportStyle.paymentSection}>
-      <div className={supportStyle.header}>
-        <h4 className={supportStyle.headOne}>&quot;Your Support makes a Difference&quot;</h4>
+    <div className={supportStyle.supportSection}>
+      <div className={supportStyle.hrLine}>
+          <hr className={supportStyle.hr} />
       </div>
-      <div className={supportStyle.buttons}>
-        <div className={supportStyle.btnOne}>
-        <a href='https://www.paypal.com/home' target='_blank' rel='noreferrer'><button className={supportStyle.One}>PayPal</button></a>
+      <div className={supportStyle.header}>
+        <h4 className={supportStyle.heading}>
+           &quot;Your support makes <br /> 
+           a difference&quot;
+        </h4>
+      </div>  
+      <div className={supportStyle.supportContent}>
+        <div className={supportStyle.supportText1}>          
+        <img className={supportStyle.supportImage} src="./src/assets/patreon.png"></img>
+        <h4><a href="https://www.patreon.com/aufdeutschgesagt/about">Be a Patron !</a></h4>
         </div>
-        <div className={supportStyle.btnTwo}>
-        <a href='https://www.patreon.com/' target='_blank' rel='noreferrer'><button className={supportStyle.Two}>Patreon</button></a>
+        <div className={supportStyle.supportText2}>
+        <img className={supportStyle.supportImage2} src="./src/assets/paypal.jpg"></img>
+        <h4><a href="https://www.paypal.com/">Make a Change !</a> </h4>
         </div>
       </div>
     </div>
   );
 }
+
 export default Support;
