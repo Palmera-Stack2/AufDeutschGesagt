@@ -1,100 +1,100 @@
 .footerContainer {
-    width: 100%;
-    background-color: black;
-    position: relative;
+  width: 100%;
+  background-color: black;
+  position: relative;
 }
 
 .newsletterWrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap-reverse;
-    width: 100%;
-
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  width: 100%;
 }
 
-
 .hrDiv {
-    display: flex;
-    justify-content: center;
-    margin: 10px 50px;
+  display: flex;
+  justify-content: center;
+  margin: 10px 50px;
 }
 
 .footerHr {
-
-    width: 100%;
-    color: white;
-    margin-top: 50px;
-
-
+  width: 100%;
+  color: white;
+  margin-top: 50px;
 }
 
 .flagPin {
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
 }
 
 .flagPin img {
-    width: 60px;
-    height: 60px;
-    margin-left: 80px;
-
+  width: 60px;
+  height: 60px;
+  margin-left: 80px;
 }
 
 .h3footer {
-    width: 30%;
-    height: 60px;
-    color: white;
-    margin-left: 50px;
-    margin-top: 10px;
+  width: 30%;
+  height: 60px;
+  color: white;
+  margin-left: 50px;
+  margin-top: 10px;
 }
 
 .socialIcons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
 }
 
 .socialIcons img {
-    filter: invert(89%) sepia(0%) saturate(10%) hue-rotate(259deg) brightness(98%) contrast(89%);
-    width: 60px;
-    height: 60px;
-    margin: 40px;
-    transition: transform 0.2s ease-in-out;
+  filter: invert(89%) sepia(0%) saturate(10%) hue-rotate(259deg) brightness(98%)
+    contrast(89%);
+  width: 60px;
+  height: 60px;
+  margin: 40px;
+  transition: transform 0.2s ease-in-out;
 }
 
 .socialIcons img:hover {
-    filter: invert(72%) sepia(66%) saturate(708%) hue-rotate(359deg) brightness(102%) contrast(106%);
-    transform: translateY(-5px);
-    width: 60px;
-    height: 60px;
+  filter: invert(72%) sepia(66%) saturate(708%) hue-rotate(359deg)
+    brightness(102%) contrast(106%);
+  transform: translateY(-5px);
+  width: 60px;
+  height: 60px;
 }
 
 .copyright {
-    display: flex;
-    justify-content: center;
-    color: white;
-    width: 100%;
-    padding: 20px;
-
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  padding: 20px;
 }
 
 .copyright p {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .palmera {
-    margin-left: 50px;
-    font-style: italic;
+  margin-left: 50px;
+  font-style: italic;
 }
 
 .heart {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
-
 @media (max-width: 1000px) {
+  .footerContainer {
+    margin-top: 100px;
+    width: 100%;
+    background-color: black;
+  }
+
 
     .footerContainer {
         margin-top: 100px;
@@ -105,20 +105,16 @@
 
     .socialIcons img {
         display: none;
-        /* width: 35px;
-        height: 35px; */
 
-    }
+  }
 
-    .copyright {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-    }
-
-    .copyright p {
-        font-size: x-small;
-    }
+  .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .copyright p {
+    font-size: x-small;
+  }
 }

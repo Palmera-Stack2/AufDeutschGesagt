@@ -1,0 +1,122 @@
+.paymentSection {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+}
+.headOne {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.btnOne {
+    border-radius: 8px;
+    cursor: pointer; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.btnTwo {
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.One {
+    width: 100px;
+}
+
+.One:hover {
+    background-color: #fece00;
+    color: #444;
+}
+
+.Two{
+    width: 100px
+}
+
+.Two:hover {
+    background-color: #fece00;
+    color: #444;
+}
+
+@media screen and (max-width: 1368) {
+    .paymentSection {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: white;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row; 
+    }
+    .headOne {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: black;
+    }
+    
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 10px;
+        background-color: #444 !important;
+    }
+
+    .btnOne {
+        border-radius: 8px;
+        cursor: pointer; 
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .btnTwo {
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .One {
+        width: 100px;
+    }
+
+    .One:onClick {
+        background-color: #fece00;
+        color: #444;
+    }
+    
+    
+    .Two{
+        width: 100px
+    }
+
+    .Two:onClick {
+        background-color: #fece00;
+        color: #444;
+    }
+    
+}
+
