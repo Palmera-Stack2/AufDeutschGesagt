@@ -16,9 +16,9 @@ export default function Home() {
       <About />
       <Podcasts />
       <Blog />
-      <Support />
       <Rating />
       <Comments />
+      <Support />
       <Footer />
     </>
   );
