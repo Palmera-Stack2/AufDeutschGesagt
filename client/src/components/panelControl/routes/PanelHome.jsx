@@ -50,23 +50,28 @@ export default function PenelHome() {
             <h3 className={style.right_homeh3}>
               <Link to="/panelcomment">
                 {" "}
-                <FontAwesomeIcon icon={faMessage} className={style.faMessage} />
+                <FontAwesomeIcon
+                  icon={faMessage}
+                  className={style.home_faMessage}
+                />
               </Link>
               Comments
             </h3>
-            <p>Hello Robin,you have {unReadComments} unread comments!</p>
+            <p className={style.right_p}>
+              Hello Robin,you have {unReadComments} unread comments!
+            </p>
           </div>
-          <div className={style.wrapper}>
-            <h3>
+          <div className={style.right_homewrapper}>
+            <h3 className={style.right_homeh3}>
               <Link to="/panelblog">
                 <FontAwesomeIcon
                   icon={faPenToSquare}
-                  className={style.faPenToSquare}
+                  className={style.home_faPenToSquare}
                 />
               </Link>
               Blog
             </h3>
-            <p>would you like to post something?</p>
+            <p className={style.right_p}>would you like to post something?</p>
           </div>
         </div>
       </div>

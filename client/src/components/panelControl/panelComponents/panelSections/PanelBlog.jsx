@@ -53,26 +53,31 @@ export default function PanelBlog() {
   return (
     <div className={panelblogStyle.hero_blog}>
       <div className={panelblogStyle.left_blog}>
-        <h2>Welcome Robin ! </h2>
+        <h2 className={panelblogStyle.left_blogheader}>Welcome Robin ! </h2>
         <hr />
         <h3>{dateToday}</h3>
       </div>
       <div className={panelblogStyle.right_blog}>
         <PanelNavbar />
-        <h2>Administrator Panel-Blog</h2>
-        <hr />
+        <h2 className={panelblogStyle.right_blogheader}>
+          Administrator Panel-Blog
+        </h2>
+        <hr className={panelblogStyle.right_bloghr} />
         <div className={panelblogStyle.container_blog}>
           <div className={panelblogStyle.wrapper_blog}>
             {blogs.map((blog) => (
               <div key={blog._id} className={panelblogStyle.div_blog}>
                 <FontAwesomeIcon
                   icon={faPenToSquare}
-                  className={panelblogStyle.faPenToSquare}
+                  className={panelblogStyle.blog_faPenToSquare}
                 />
-                <button onClick={() => handeldeleteBlogs(blog._id)}>
+                <button
+                  onClick={() => handeldeleteBlogs(blog._id)}
+                  className={panelblogStyle.bligicon_btn}
+                >
                   <FontAwesomeIcon
                     icon={faCircleXmark}
-                    className={panelblogStyle.xicon}
+                    className={panelblogStyle.blog_xicon}
                   />
                 </button>
 
@@ -81,9 +86,14 @@ export default function PanelBlog() {
             ))}
           </div>
         </div>
-        <form className={panelblogStyle.form} onSubmit={handleSubmit}>
-          <textarea type="text" placeholder="your Post" name="content" />
-          <button>SUBMIT</button>
+        <form className={panelblogStyle.blog_form} onSubmit={handleSubmit}>
+          <textarea
+            className={panelblogStyle.blog_textarea}
+            type="text"
+            placeholder="your Post"
+            name="content"
+          />
+          <button className={panelblogStyle.blog_submit}>SUBMIT</button>
         </form>
       </div>
     </div>

@@ -91,7 +91,7 @@
   .right_login .login_form {
     margin-top: 90px;
     width: 95%;
-    height: 30vh;
+    height: 50vh;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -110,6 +110,7 @@
     background-color: #fece00;
     width: 311.59px;
     height: 61.41px;
+    margin-top: 0px;
   }
 
   .left_login {
