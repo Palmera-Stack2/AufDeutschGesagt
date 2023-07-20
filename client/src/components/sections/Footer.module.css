@@ -95,18 +95,17 @@
     background-color: black;
   }
 
-  /* .newsletterWrapper {
-        margin-bottom: 2px;
-    } */
 
-  .newsLetterDiv {
-    padding-right: 60px;
-  }
+    .footerContainer {
+        margin-top: 100px;
+        width: 100%;
+        background-color: black;
 
-  .socialIcons img {
-    display: none;
-    /* width: 35px;
-        height: 35px; */
+    }
+
+    .socialIcons img {
+        display: none;
+
   }
 
   .copyright {

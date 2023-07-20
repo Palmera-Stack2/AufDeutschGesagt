@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBlog } from "@fortawesome/free-solid-svg-icons";
@@ -62,6 +63,7 @@ function Blog() {
       )}
     </div>
   );
+
 }
 
 export default Blog;

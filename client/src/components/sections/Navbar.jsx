@@ -34,7 +34,7 @@ const Navbar = () => {
               {" "}
               <li>Über Mich</li>{" "}
             </HashLink>
-            <HashLink to={"/#podcast"}>
+            <HashLink to={"/#podcasts"}>
               {" "}
               <li>Podcast</li>{" "}
             </HashLink>
@@ -42,14 +42,15 @@ const Navbar = () => {
               {" "}
               <li>Blog</li>{" "}
             </HashLink>
+            <HashLink to={"/#kontat"}>
+              {" "}
+              <li>Kontakt</li>{" "}
+            </HashLink>
             <HashLink to={"/#newsletter"}>
               {" "}
               <li>Newsletter</li>{" "}
             </HashLink>
-            <HashLink to={"/#contact"}>
-              {" "}
-              <li>Kontakt</li>{" "}
-            </HashLink>
+
           </ul>
           {/* <FontAwesomeIcon className="fontawesome" icon={faPenNib} /> */}
         </div>

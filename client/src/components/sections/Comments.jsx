@@ -60,7 +60,7 @@ export default function CommentSection() {
   };
 
   return (
-    <div id="comment-section" className={commentStyle.commentSection}>
+    <div id="kontakt" className={commentStyle.commentSection}>
       <div className={commentStyle.commentContent}>
         {/* <div className={commentStyle.follow}>
           <div className={commentStyle.followDiv}>
