@@ -81,7 +81,8 @@ iframe {
   font-family: "Roboto", sans-serif;
 }
 
-.textAbout h3 {
+
+.aboutH3 {
   margin-bottom: 50px;
   text-decoration: underline;
 }
