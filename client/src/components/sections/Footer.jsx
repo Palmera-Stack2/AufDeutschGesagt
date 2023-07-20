@@ -2,12 +2,12 @@ import Newsletter from "../UI/Newsletter";
 import footerStyle from "./Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
-
+import insta from "../../assets/insta.png";
 export default function Footer() {
   return (
 
     <div className={footerStyle.footerContainer}>
-  
+
       <div className={footerStyle.hrDiv}>
         <hr className={footerStyle.footerHr} />
       </div>
@@ -23,7 +23,7 @@ export default function Footer() {
         {/* <div className={footerStyle.follow}><img src="./src/assets/follow.png"></img></div> */}
         <div className={footerStyle.socialIcons}>
           <a href="https://www.instagram.com/aufdeutschgesagt" target="blanc">
-            <img src="./src/assets/insta.png"></img>
+            <img src={insta}></img>
           </a>
 
           <a

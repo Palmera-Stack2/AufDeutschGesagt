@@ -11,6 +11,13 @@ import userRoutes from "./routes/userRoutes.js";
 import commentRoutes from "./routes/commentRoutes.js";
 import postRoutes from "./routes/postRoutes.js";
 import fileRoutes from "./routes/fileRoutes.js";
+//imports for locating our directory (for deployment)
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+import path from "path";
+
+const __filename = fileURLToPath(import.meta.url); // get the current file location of server.js
+const __dirname = dirname(__filename); //extract directory from that location.
 
 dotenv.config();
 
@@ -54,10 +61,13 @@ app.use("/api/files", fileRoutes);
 //the files inside the folder will be served by our server
 app.use("/uploads", express.static("./uploads"));
 
-app.all("*", (req, res) => {
-  return res.status(StatusCodes.NOT_FOUND).json({ message: "Invalid path" });
+//serve our files statically
+app.use(express.static(path.join(__dirname, "../client/dist")));
+//any other request made serve the index.html of our production build frontend.
+app.get("*", (req, res) => {
+  res.sendFile(__dirname + "../client/dist/index.html");
 });
 
-app.listen(3001, () => {
+app.listen(process.env.PORT || 3001, () => {
   console.log("The server is listening for requests....");
 });
