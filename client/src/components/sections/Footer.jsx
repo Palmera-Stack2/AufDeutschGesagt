@@ -6,7 +6,7 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
   return (
-    <div className={footerStyle.footerContainer}>
+    <div id="newsletter" className={footerStyle.footerContainer}>
 
 
       <div className={footerStyle.hrDiv}>

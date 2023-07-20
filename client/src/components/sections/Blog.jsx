@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 
 export class Blog extends Component {
   render() {
     return (
-      <div>Blog</div>
+      <div id='blog'>Blog</div>
     )
   }
 }

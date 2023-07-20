@@ -55,7 +55,7 @@ export default function CommentSection() {
   };
 
   return (
-    <div id="comment-section" className={commentStyle.commentSection}>
+    <div id="kontakt" className={commentStyle.commentSection}>
       <div className={commentStyle.commentContent}>
         <h3>leave me a comment and rate my content!</h3>
 
