@@ -35,7 +35,68 @@ export default function Podcasts() {
         <div className={podcastsStyle.hrDiv}>
           <hr className={podcastsStyle.Hr} />
         </div>
-        <div className={podcastsStyle.podcastsContent}>
+       
+          <div className={podcastsStyle.podcastsContent}>
+            <div className={podcastsStyle.HeadphonesIcon}>
+              <FontAwesomeIcon
+                icon={faHeadphones}
+                className={podcastsStyle.faHeadphones}
+              />
+            </div>
+            <div className={podcastsStyle.cardSection}>
+              <div className={podcastsStyle.card}>
+                <div className={podcastsStyle.cardHeader}>
+                  <div className={podcastsStyle.cardImg}>
+                    <img
+                      src={cover}
+                      alt="podcastCover "
+                      className={podcastsStyle.coverImg}
+                    />
+                  </div>
+                  <div className={podcastsStyle.playButton}>
+                    <div>
+                      <FontAwesomeIcon
+                        icon={isPlaying ? faCircleStop : faCirclePlay}
+                        className={podcastsStyle.faCirclePlay}
+                        onClick={toggleAudio}
+                      />
+                      <audio ref={Vorstellung} src={VorstellungFile} />
+                    </div>
+                  </div>
+                </div>
+                <div className={podcastsStyle.cardText}>
+                  <h4>Intro to Podcasts</h4>
+                  <p>
+                    Wenn du jetzt neugierig geworden bist, findest du hier alle
+                    Episoden.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className={podcastsStyle.rightImg}>
+              <img
+                src={Studio}
+                alt="Studio-img"
+                className={podcastsStyle.studioImg}
+              />
+            </div>
+          </div>
+          <div className={podcastsStyle.BtnContainer}>
+            <a
+              href="https://www.patreon.com/aufdeutschgesagt"
+              className={podcastsStyle.browseBtn}
+            >
+              Browse Podcasts
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  );
+}
+
+{
+  /* <div className={podcastsStyle.podcastsContent}>
           <div className={podcastsStyle.podcastsContentHeader}>
             <div className={podcastsStyle.HeadphonesIcon}>
               <FontAwesomeIcon
@@ -89,8 +150,5 @@ export default function Podcasts() {
               </a>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  );
+        </div> */
 }
