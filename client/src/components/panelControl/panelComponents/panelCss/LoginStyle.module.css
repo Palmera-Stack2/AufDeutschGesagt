@@ -5,24 +5,23 @@
   padding: 0;
   background-color: #d9d9d9;
   display: flex;
-  justify-content: center;
-  justify-items: center;
+  gap: 15px;
   font-size: 1.5rem;
 }
 .right_login {
   background-color: #fff9f9;
-  width: 1200px;
+  width: 77%;
   height: 95%;
   margin-right: 0;
   margin-top: 30px;
-  text-align: right;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
 
 .login_form {
-  margin-left: 10%;
-  margin-top: 8%;
-  width: 1000px;
-  height: 65vh;
+  width: 700px;
+  height: 90%;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -33,8 +32,8 @@
 }
 .login_form input {
   background-color: #d9d9d9;
-  width: 411.59px;
-  height: 61.41px;
+  width: 511.59px;
+  height: 100px;
   border-radius: 50px;
   border: none;
   text-align: center;
@@ -42,18 +41,25 @@
 }
 .login_form button {
   background-color: #fece00;
-  width: 411.59px;
-  height: 61.41px;
+  width: 511.59px;
+  height: 100px;
+}
+.left_login {
+  width: 20%;
+  height: 100vh;
 }
 
-.left_login {
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
+.leftHero_container {
+  margin: 0 auto;
+  width: 50%;
+}
+.leftHero_container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 .left_login h3 {
+  margin-top: 300px;
   margin-bottom: 100px;
 }
 .left_login .lockicon {
@@ -84,9 +90,8 @@
 
   .right_login .login_form {
     margin-top: 90px;
-    margin-left: 2.5%;
     width: 95%;
-    height: 30vh;
+    height: 50vh;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -105,6 +110,7 @@
     background-color: #fece00;
     width: 311.59px;
     height: 61.41px;
+    margin-top: 0px;
   }
 
   .left_login {
@@ -112,12 +118,12 @@
     height: 20vh;
     text-align: center;
     position: relative;
+    font-size: 0.7rem;
   }
-  .left_login .left_container {
-    margin: 0 auto;
-  }
+
   .left_login h3 {
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .left_login img {

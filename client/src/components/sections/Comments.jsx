@@ -1,36 +1,36 @@
 import { useState } from "react";
 import commentStyle from "./Comment.module.css";
-// import follow from "../../assets/follow.png";
-
+import axios from "axios";
 
 export default function CommentSection() {
-  const [name, setName] = useState("");
-  const [comment, setComment] = useState("");
   const [rating, setRating] = useState(0);
 
-  const handleNameChange = (event) => {
-    setName(event.target.value);
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const data = {
+      userName: formData.get("userName"),
+      comment: formData.get("comment"),
+      rating: formData.get("rating"),
+    };
+    try {
+      const res = await axios.post("/api/comment/user/create", data);
+      console.log(res.data);
+    } catch (error) {
+      console.error("there was an error", error);
+    }
   };
-
-  const handleCommentChange = (event) => {
-    setComment(event.target.value);
-    const input = event.target.value;
-    const limitedText = input.substring(0, 200); // Limit to 30 characters
-    setComment(limitedText);
-  };
-
   const handleRatingChange = (selectedRating) => {
+    console.log("Selected rating:", selectedRating);
     setRating(selectedRating);
   };
+  const handleRatingHover = (hoveredRating) => {
+    console.log("Hovered rating:", hoveredRating);
+    setRating(hoveredRating);
+  };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log("Name:", name);
-    console.log("Comment:", comment);
-    console.log("Rating:", rating);
-    setName("");
-    setComment("");
-    setRating(0);
+  const handleRatingLeave = () => {
+    console.log("Left the star area");
   };
 
   const renderStars = () => {
@@ -51,52 +51,32 @@ export default function CommentSection() {
     return stars;
   };
 
-  const handleRatingHover = (hoveredRating) => {
-    setRating(hoveredRating);
-  };
-
-  const handleRatingLeave = () => {
-    setRating(0);
-  };
-
   return (
-    <div id="kontakt" className={commentStyle.commentSection}>
+    <div id="comment-section" className={commentStyle.commentSection}>
       <div className={commentStyle.commentContent}>
-        {/* <div className={commentStyle.follow}>
-          <div className={commentStyle.followDiv}>
-   <img className={commentStyle.followIMG} src={follow}></img> 
-          </div>
-        </div> */}
-        <h3 className={commentStyle.h3}>
-          leave me a comment and rate my content!
-        </h3>
+        <h3>leave me a comment and rate my content!</h3>
 
-        <form className={commentStyle.form} onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Name:</label>
-            <input
-              placeholder="Your name here..."
-              type="text"
-              id="name"
-              value={name}
-              onChange={handleNameChange}
-              required
-              className={commentStyle.nameArea}
-            />
+            <input name="userName" type="text" id="name" required />
           </div>
           <div>
             <label htmlFor="comment">Comment:</label>
             <textarea
-              placeholder="Your comment here..."
+              name="comment"
               className={commentStyle.textArea}
               id="comment"
-              value={comment}
-              onChange={handleCommentChange}
               required
             ></textarea>
           </div>
           <div>
-            <div className={commentStyle.ratingStars}>{renderStars()}</div>
+            <label htmlFor="rating">Rating:</label>
+            <div className={commentStyle.ratingStars}>
+              {" "}
+              <input type="hidden" name="rating" value={rating} />
+              {renderStars()}
+            </div>
           </div>
           <button type="submit" className={commentStyle.button}>
             Submit
@@ -106,45 +86,8 @@ export default function CommentSection() {
           <hr className={commentStyle.Hr} />
         </div>
         <div className={commentStyle.footer}>
-          <h4 className={commentStyle.h4}>Follow me here</h4>
-          <div className={commentStyle.icons}>
-            <div className={commentStyle.socialIcons}>
-              <a
-                href="https://www.instagram.com/aufdeutschgesagt"
-                target="blanc"
-              >
-                <img src="./src/assets/insta.png"></img>
-              </a>
-
-              <a
-                href="https://podcasts.apple.com/us/podcast/id1455018378?mt=2"
-                target="blanc"
-              >
-                <img src="./src/assets/Itunes.png"></img>
-              </a>
-
-              <a
-                href="https://www.patreon.com/aufdeutschgesagt/about"
-                target="blanc"
-              >
-                <img src="./src/assets/patreon.png"></img>
-              </a>
-
-              <a
-                href=" https://www.facebook.com/Auf-Deutsch-gesagt-Podcast-2244379965835103/"
-                target="blanc"
-              >
-                <img src="./src/assets/face.png"></img>
-              </a>
-
-              <a
-                href="https://www.youtube.com/c/AufDeutschgesagt"
-                target="blanc"
-              >
-                <img src="./src/assets/youtube.png"></img>
-              </a>
-            </div>
-          </div>
+          <h4>Follow me here</h4>
+          <div className={commentStyle.icons}></div>
         </div>
       </div>
     </div>

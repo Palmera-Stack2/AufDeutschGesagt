@@ -43,9 +43,9 @@ export default function PanelComment() {
   return (
     <div className={panelcommentStyle.hero_comment}>
       <div className={panelcommentStyle.left_comment}>
-        <h2>Welcome Robin ! </h2>
-        <hr />
-        <h3>{dateToday}</h3>
+        <h2 className={panelcommentStyle.left_commenth2}>Welcome Robin ! </h2>
+        <hr className={panelcommentStyle.left_commenthr} />
+        <h3 className={panelcommentStyle.left_commenth3}>{dateToday}</h3>
         <p className={panelcommentStyle.comments}>
           {comments.length} comments you have{" "}
           <FontAwesomeIcon icon={faThumbsUp} />
@@ -64,24 +64,29 @@ export default function PanelComment() {
       </div>
       <div className={panelcommentStyle.right_comment}>
         <PanelNavbar />
-        <h2>Administrator Panel-Comments</h2>
-        <hr />
+        <h2 className={panelcommentStyle.right_commentheader}>
+          Administrator Panel-Comments
+        </h2>
+        <hr className={panelcommentStyle.right_commenthr} />
         <div className={panelcommentStyle.container_comment}>
           <div className={panelcommentStyle.wrapper_comment}>
             {comments.map((comment) => (
               <div key={comment._id} className={panelcommentStyle.div_comment}>
                 <FontAwesomeIcon
                   icon={faMessage}
-                  className={panelcommentStyle.messageicon}
+                  className={panelcommentStyle.comment_messageicon}
                 />
-                <button onClick={() => handeldeleteComments(comment._id)}>
+                <button
+                  onClick={() => handeldeleteComments(comment._id)}
+                  className={panelcommentStyle.iconcomment_btn}
+                >
                   <FontAwesomeIcon
                     icon={faCircleXmark}
-                    className={panelcommentStyle.xicon}
+                    className={panelcommentStyle.comment_xicon}
                   />
                 </button>
 
-                <h3 className={panelcommentStyle.comment_header}>
+                <h3 className={panelcommentStyle.divcomment_header}>
                   {comment.userName}
                 </h3>
                 <p className={panelcommentStyle.comment_content}>

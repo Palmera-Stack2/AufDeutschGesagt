@@ -1,34 +1,37 @@
 .hero_blog {
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
   background-color: #d9d9d9;
   display: flex;
-  justify-content: center;
-  clear: both;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1em;
 }
 .right_blog {
   background-color: #fff9f9;
-  min-height: 95vh;
-  width: 1600px;
+  height: 95%;
+  width: 77%;
   margin-right: 0;
   margin-top: 30px;
   text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
 }
-.right_blog h2 {
+.right_blogheader {
   margin-top: 15px;
   margin-right: 10%;
 }
-.right_blog hr {
+.right_bloghr {
   width: 100%;
+  margin-bottom: 15px;
 }
 .right_blog .container_blog {
   height: 40vh;
   background-color: #d9d9d9;
   margin-left: 10%;
   margin-top: 10px;
-  width: 1300px;
+  width: 70%;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -53,7 +56,7 @@
 .container_blog .div_blog {
   position: relative;
   width: 90%;
-  height: auto;
+  min-height: 150px;
   flex-direction: row-reverse;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -68,31 +71,31 @@
   margin-left: 5px;
   margin-right: 5px;
 }
-.div_blog .faPenToSquare {
+.div_blog .blog_faPenToSquare {
   position: absolute;
   left: 9px;
   top: 5px;
   font-size: 1.5rem;
 }
-.div_blog .xicon {
+.div_blog .blog_xicon {
   text-align: center;
   font-size: 1.5rem;
   color: red;
 }
-.div_blog button {
+.div_blog .bligicon_btn {
   position: absolute;
   right: 10px;
   top: 2px;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   background-color: transparent;
 }
-.right_blog .form {
+.right_blog .blog_form {
   height: 40vh;
   background-color: #d9d9d9;
   margin-left: 10%;
   margin-top: 25px;
-  width: 1300px;
+  width: 70%;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -100,7 +103,7 @@
   align-items: center;
   font-size: 1.5rem;
 }
-.right_blog .form textarea {
+.right_blog .blog_form .blog_textarea {
   border: 0.5rem solid black;
   padding-top: 10px;
   width: 80%;
@@ -113,13 +116,14 @@
   margin-bottom: 10px;
   border-radius: 15px;
 }
-.right_blog .form button {
+
+.right_blog .blog_form .blog_submit {
   background-color: #fece00;
 }
 
 .left_blog {
-  min-height: 95vh;
-  width: 300px;
+  height: 100vh;
+  width: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -142,6 +146,7 @@
   .hero_blog {
     flex-direction: column;
     justify-content: center;
+    font-size: 0.5em;
   }
   .left_blog {
     display: none;
@@ -170,27 +175,27 @@
     font-size: 00.9rem;
   }
 
-  .div_blog .faPenToSquare {
+  .div_blog .blog_faPenToSquare {
     top: 5px;
     font-size: 1rem;
   }
-  .div_blog .xicon {
+  .div_blog .blog_xicon {
     font-size: 1rem;
   }
-  .div_blog button {
+  .div_blog .bligicon_btn {
     position: absolute;
     right: 10px;
     top: 2px;
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
   }
-  .right_blog .form {
+  .right_blog .blog_form {
     margin-left: 2.5%;
     width: 95%;
     height: 30vh;
     font-size: 0.7rem;
   }
-  .right_blog .form textarea {
+  .right_blog .blog_form .blog_textarea {
     height: 125px;
     margin-top: 10px;
   }
