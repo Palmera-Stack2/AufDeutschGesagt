@@ -20,16 +20,16 @@
 .navbar-menu {
     display: flex;
     padding: 20px 100px 0;
-    font-family: 'Roboto', sans-serif;
-
     list-style: none;
-    font-size: 2rem;
+
 }
 
 .navbar-menu li {
     padding: 30px;
     color: white;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
     transition: transform 0.2s ease-in-out;
 
 }

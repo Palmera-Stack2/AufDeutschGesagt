@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import "../sections/Navbar.css";
 
+
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -28,7 +29,7 @@ const Navbar = () => {
           <ul className={`navbar-menu ${isNavOpen ? "open" : ""}`}>
             <HashLink to={"/#home"}>
               {" "}
-              <li>Home</li>{" "}
+              <li >Home</li>{" "}
             </HashLink>
             <HashLink to={"/#about"}>
               {" "}
@@ -46,10 +47,7 @@ const Navbar = () => {
               {" "}
               <li>Kontakt</li>{" "}
             </HashLink>
-            <HashLink to={"/#newsletter"}>
-              {" "}
-              <li>Newsletter</li>{" "}
-            </HashLink>
+
 
           </ul>
           {/* <FontAwesomeIcon className="fontawesome" icon={faPenNib} /> */}
