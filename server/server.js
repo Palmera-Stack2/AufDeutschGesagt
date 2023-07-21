@@ -62,9 +62,9 @@ app.use("/api/files", fileRoutes);
 app.use("/uploads", express.static("./uploads"));
 
 //serve our files statically
-app.use(express.static(path.join(__dirname, "../client/dist")));
+// app.use(express.static(path.join(__dirname, "../client/dist")));
 //any other request made serve the index.html of our production build frontend.
-app.get("*", (req, res) => {
+app.get("/", (req, res) => {
   res.sendFile(__dirname + "/views/dist/index.html");
 });
 
