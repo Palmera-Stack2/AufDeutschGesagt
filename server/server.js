@@ -50,6 +50,9 @@ mongoose
     console.log("Database connected! 😃");
   })
   .catch((error) => {
+    console.log(
+      `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}/${process.env.DB_NAME}`
+    );
     console.log(error.message);
     console.log("🤨");
   });
