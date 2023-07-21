@@ -1,6 +1,7 @@
 // import { useState } from "react";
 
 import heroStyle from "./Hero.module.css";
+import heroImage from "../../assets/hero-image.jpg";
 
 
 export default function Hero() {
@@ -10,8 +11,8 @@ export default function Hero() {
   return (
     <div id="home" className={heroStyle.heroSection}>
 
-      <div className={heroStyle.heroImage}>
-        {/* <img className="hero-image" src={heroImage}></img> */}
+      <div className={heroStyle.heroImageDiv}>
+        <img className={heroStyle.heroImg} src={heroImage}></img>
       </div>
 
     </div>

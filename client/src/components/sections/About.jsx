@@ -19,8 +19,8 @@ export default function About() {
     <div id="about" className={aboutStyle.pageSection}>
 
       <div className={aboutStyle.aboutHeader}>
-        <h2>Auf Deutsch Gesagt</h2>
-        <h1 >Über Mich</h1>
+        <h3 className={aboutStyle.abouth3}>Auf Deutsch Gesagt</h3>
+        <h2 className={aboutStyle.abouth2}>Über Mich</h2>
 
       </div>
 
@@ -44,14 +44,14 @@ export default function About() {
         </div>
         <div className={aboutStyle.textAbout}>
           <h3 className={aboutStyle.aboutH3}>About Robin</h3>
-          <p>Kurz gesagt:
+          <p className={aboutStyle.aboutPara}>Kurz gesagt:
             Deutscher Muttersprachler
             Master of Education (Universität Hamburg)
             Zertifizierter Lehrer für DaZ (Deutsch als Zweitsprache)
             Content-Creator
             Schlagzeuger
             … Mensch
-            {showAll ? (<span> <br />
+            {showAll ? (<span className={aboutStyle.aboutSpan}> <br />
               <br />Hallo und herzlich willkommen, <br />
               <br /> ich bin Robin, Lehrer aus Hamburg und seit 2019 kreativer Kopf von „Auf Deutsch gesagt!“.
               Als ich 2018 nach meinem Lehramtsstudium als Fremdsprachenassistent in England war, um meine ersten Erfahrungen als Deutschlehrer zu machen, habe ich schnell gemerkt, dass ich große Freude an der Vermittlung der deutschen Sprache habe
@@ -61,7 +61,7 @@ export default function About() {
               <br />Da meine Suche damals ins Leere lief, startete ich meinen eigenen Podcast für fortgeschrittene Lernende. Das war die Geburtsstunde von „Auf Deutsch gesagt!“.
 
               Neben meinem ambitionierten Hobby auf diesem Kanal bin ich Lehrer an einer beruflichen Schule in Hamburg.  <br />
-              <br /> ch liebe es, mit Menschen zu arbeiten, die wissen, was sie wollen und sehe mich als Begleiter auf diesem Weg. Kreativität spielt dabei immer eine wichtige Rolle. Diese lebe ich selbst in meinen Inhalten auf den sozialen Netzwerken als auch am Schlagzeug in meinen Bands aus.
+              <br /> Ich liebe es, mit Menschen zu arbeiten, die wissen, was sie wollen und sehe mich als Begleiter auf diesem Weg. Kreativität spielt dabei immer eine wichtige Rolle. Diese lebe ich selbst in meinen Inhalten auf den sozialen Netzwerken als auch am Schlagzeug in meinen Bands aus.
               Wenn du mehr erfahren willst, gucke dich hier ein bisschen um, oder kontaktiere micht direkt.
               Dein, Robin <FontAwesomeIcon icon={faHeart} />
 
@@ -72,7 +72,7 @@ export default function About() {
 
             </span>) : (<span>...</span>)
             }</p>
-          <button onClick={toggleShowAll}> {showAll ? 'Read less' : 'Read More'}</button>
+          <button className={aboutStyle.aboutBtn} onClick={toggleShowAll}> {showAll ? 'Read less' : 'Read More'}</button>
         </div>
 
 
