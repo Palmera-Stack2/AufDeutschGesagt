@@ -14,24 +14,24 @@
   height: 100px;
 }
 
-.heading {
+.blogHeading {
   color: #000000  ;
   font-size: 40px;
   font-weight: 600;
 }
 
-.iconBlog {
+.blogIcon {
   color: black;
   font-size: 40px;
 }
 
-.hrDiv{
+.blogHrDiv{
   display: flex;
   justify-content: center;
   margin: 20px 0;
 }
 
-.Hr{
+.blogHr{
   width: 80%;
   height: 1px;
   color: white;
@@ -77,24 +77,24 @@
   padding-bottom: 90px;
 }
 
-.readMoreBtn {
+.blogReadMoreBtn {
   margin-right: 710px;
   margin-bottom: 5px;
   background-color: grey;
   transition: none !important;
 }
 
-.readMoreBtn:hover {
+.blogReadMoreBtn:hover {
   background-color: #fece00;
   color: black;
   transition: none !important;
 }
 
-.readMoreBtn:focus {
+.blogReadMoreBtn:focus {
   transition: none !important;
 }
 
-.line {
+.blogLine {
   display: flex;
   justify-content: center;
   /* margin: 20px 0;
@@ -103,12 +103,12 @@
 
 }
 
-.linee {
+.blogLinee {
   width: 80%;
   color: black;
 }
 
-.para p {
+.blogParagraph .blogPara {
   color: black;
   padding-bottom: 90px;
   font-size: large;
@@ -134,13 +134,13 @@
     overflow: hidden;
   }
 
-  .iconBlog {
+  .blogIcon {
     /* margin-left: 40px;
     margin-right: 40px; */
     font-size: 35px;
   }
 
-  .blogHeader .heading {
+  .blogHeading {
     /* margin-left: 40px;
     margin-right: 40px; */
     font-size: 35px;
@@ -168,7 +168,7 @@
   
   }
 
-  .blogText p {
+  .blogText .blogTextPara {
     text-align: justify;
     margin: 0px;
     padding: 40px 40px;
@@ -178,29 +178,29 @@
     font-weight: bold;
   }
 
-  .blogText .readMoreBtn {
+  .blogText .blogReadMoreBtn {
     margin: 50px 0;
     margin-bottom: 20px;
     color: black;
     background-color: #fece00;
   }
 
-  .line {
+  .blogLine {
     padding-top: 0px;
   }
 
-  .linee {
+  .blogLinee {
     color: black;
   }
 
-  .para {
+  .blogParagraph {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 0px;
   }
 
-  .para p{
+  .blogParagraph .blogPara {
     text-align: justify;
     margin: 0px;
     padding: 40px 40px;
