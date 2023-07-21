@@ -1,57 +1,55 @@
-
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBlog } from "@fortawesome/free-solid-svg-icons";
-import HafenImage from "../../assets/Hafen.jpg";
+import Boat from "../../assets/boat.png";
 import blogStyle from "./Blog.module.css";
 
 function Blog() {
   const [showText, setShowText] = useState(false);
-  const [isClicked, setIsClicked] = useState(true);
+  const [isClicked, setIsClicked] = useState("Read More");
 
   const handleReadMore = () => {
     setShowText(!showText);
-    setIsClicked("Read Less");
+    setIsClicked(!showText ? "Read Less" : "Read More");
   };
 
   return (
     <div className={blogStyle.blogSection}>
+
       <div className={blogStyle.blogHeader}>
-        <div>
-          <FontAwesomeIcon
-            className={blogStyle.blogIcon}
-            icon={faBlog}
-            size="2x"
-          />
-        </div>
-        <div className={blogStyle.blogHeader}>
-          <h4 className={blogStyle.blogHeading}>Blog</h4>
-        </div>
+        <h3 className={blogStyle.blogH3}>Auf Deutsch Gesagt </h3>
+        <h2 className={blogStyle.blogH2}>Blog</h2>
       </div>
+
       <div className={blogStyle.blogHrDiv}>
         <hr className={blogStyle.blogHr} />
       </div>
       <div className={blogStyle.blogContent}>
         <div className={blogStyle.blogImage}>
-          <img src={HafenImage} alt="Hafen" />
+          <img className={blogStyle.blogImg} src={Boat} alt="Hafen" />
         </div>
         <div className={blogStyle.blogText}>
           <p className={blogStyle.blogTextPara}>
-            {" "}
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
             assumenda officia ad illum fugiat, assumenda!
           </p>
           <button className={blogStyle.blogReadMoreBtn} onClick={handleReadMore}>
-            {isClicked ? "Read More " : "Read Less"}
+            {isClicked}
           </button>
         </div>
       </div>
-      <div className={blogStyle.blogLine}>
+
+      {/* <div className={blogStyle.blogLine}>
         <hr className={blogStyle.blogLinee} />
-      </div>
+      </div> */}
+
       {showText && (
+
+
         <div className={blogStyle.blogParagraph}>
+          <div className={blogStyle.blogLine}>
+            <hr className={blogStyle.blogLinee} />
+          </div>
           <p className={blogStyle.blogPara}>
+
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
             distinctio earum accusantium quisquam vel debitis? Labore nobis
             assumenda exercitationem, consectetur adipiscing elit, sed do
@@ -63,7 +61,5 @@ function Blog() {
       )}
     </div>
   );
-
 }
-
 export default Blog;
