@@ -19,39 +19,39 @@ function Blog() {
       <div className={blogStyle.blogHeader}>
         <div>
           <FontAwesomeIcon
-            className={blogStyle.iconBlog}
+            className={blogStyle.blogIcon}
             icon={faBlog}
             size="2x"
           />
         </div>
         <div className={blogStyle.blogHeader}>
-          <h4 className={blogStyle.heading}>Blog</h4>
+          <h4 className={blogStyle.blogHeading}>Blog</h4>
         </div>
       </div>
-      <div className={blogStyle.hrDiv}>
-        <hr className={blogStyle.Hr} />
+      <div className={blogStyle.blogHrDiv}>
+        <hr className={blogStyle.blogHr} />
       </div>
       <div className={blogStyle.blogContent}>
         <div className={blogStyle.blogImage}>
           <img src={HafenImage} alt="Hafen" />
         </div>
         <div className={blogStyle.blogText}>
-          <p>
+          <p className={blogStyle.blogTextPara}>
             {" "}
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
             assumenda officia ad illum fugiat, assumenda!
           </p>
-          <button className={blogStyle.readMoreBtn} onClick={handleReadMore}>
+          <button className={blogStyle.blogReadMoreBtn} onClick={handleReadMore}>
             {isClicked ? "Read More " : "Read Less"}
           </button>
         </div>
       </div>
-      <div className={blogStyle.line}>
-        <hr className={blogStyle.linee} />
+      <div className={blogStyle.blogLine}>
+        <hr className={blogStyle.blogLinee} />
       </div>
       {showText && (
-        <div className={blogStyle.para}>
-          <p>
+        <div className={blogStyle.blogParagraph}>
+          <p className={blogStyle.blogPara}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
             distinctio earum accusantium quisquam vel debitis? Labore nobis
             assumenda exercitationem, consectetur adipiscing elit, sed do

@@ -4,25 +4,25 @@
     width: 100%;
 }
 
-.hrLine{
+.supportHrLine{
     display: flex;
     justify-content: center;
     margin: 30px 0;
 }
   
-.hr{
+.supportHr{
     width: 80%;
     height: 1px;
     color: white;
 }
 
-.header {
+.supportHeader {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.heading {
+.supportHeading {
     font-family: 'Roboto';
     color: black;
     font-size: 40px;
@@ -42,21 +42,21 @@
     transition: all 0.04s ease-in-out;
 }
 
-.supportText1, .supportText2 {
+.supportTextOne, .supportTextTwo {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.supportText1 a, .supportText2 a {
+.supportTextOne a, .supportTextTwo a {
     color: black;
     font-family: 'Roboto';
     font-size: 20px;
     font-weight: 100;
 }
 
-h4 {
+.supportPatreon {
     text-align: left;
     font-family: 'Roboto';
     color: black;
@@ -65,12 +65,12 @@ h4 {
     padding: 40px;
 }
 
-.supportImage {
+.supportImageOne {
     width: 90px;
     height: 90px;
 }
 
-.supportImage2 {
+.supportImageTwo {
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -78,24 +78,24 @@ h4 {
 
 @media screen and (min-width: 991px) {
 
-    .hrLine{
+    .supportHrLine{
         display: flex;
         justify-content: center;
         margin-top: 50px;
     }
       
-    .hr{
+    .supportHr{
         width: 80%;
         height: 1px;
         color: white;
     }
     
-    .header {
+    .supportHeader {
         display: inline-block;
         align-items: flex-start;
     }
     
-    .header .heading {
+    .supportHeader .supportHeading {
         text-align: left;
         letter-spacing: 8px;
 
@@ -108,11 +108,11 @@ h4 {
         margin-bottom: 30px; 
     }
 
-    .supportText1 { 
+    .supportTextOne { 
         margin-right: 35px;
     }
     
-    .supportText1, .supportText2 {
+    .supportTextOne, .supportTextTwo {
         display: flex;
         justify-content: center;
         flex-direction: row;
