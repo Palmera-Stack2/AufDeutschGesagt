@@ -38,10 +38,11 @@
   margin-top: 50px;
 }
 .HeadphonesIcon {
-  margin-bottom: 300px;
+  margin-bottom: 400px;
 }
 .faHeadphones {
   font-size: 4rem;
+  color: gray;
 }
 .rightImg {
   display: flex;
@@ -53,10 +54,11 @@
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
+  margin-bottom: 90px;
 }
 .BtnContainer {
   display: grid;
-  padding: 20px;
+  padding: 40px;
   width: fit-content;
   float: right;
   margin-right: 400px;
@@ -160,6 +162,7 @@
     margin-top: 0;
   }
   .HeadphonesIcon {
+    margin-top: 0px;
     margin-bottom: 5px;
   }
   .faHeadphones {
