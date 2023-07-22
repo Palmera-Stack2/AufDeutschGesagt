@@ -45,19 +45,8 @@ export const OwnerUnReadComment = async (req, res) => {
  */
 export const ListComment = async (req, res) => {
   try {
-    const page = parseInt(req.query.page) || 1; // Get the page number from query parameters or default to 1
-    const limit = 3; // Number of documents to fetch per page
-    const skip = (page - 1) * limit; // Calculate the number of documents to skip based on the page number
-
-    const totalComments = await Comment.countDocuments(); // Get the total count of meditations
-    const comments = await Comment.find().skip(skip).limit(limit); // Fetch the meditations based on skip and limit
-
-    return res.status(StatusCodes.OK).json({
-      page,
-      limit,
-      totalComments,
-      comments,
-    });
+    const comments = await Comment.find();
+    return res.status(StatusCodes.OK).json(comments);
   } catch (error) {
     return res
       .status(StatusCodes.INTERNAL_SERVER_ERROR)

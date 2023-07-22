@@ -21,6 +21,9 @@
 .right_blogheader {
   margin-top: 15px;
   margin-right: 10%;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
 }
 .right_bloghr {
   width: 100%;
@@ -56,7 +59,7 @@
 .container_blog .div_blog {
   position: relative;
   width: 90%;
-  min-height: 150px;
+  height: auto;
   flex-direction: row-reverse;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -91,7 +94,7 @@
   background-color: transparent;
 }
 .right_blog .blog_form {
-  height: 40vh;
+  height: 30vh;
   background-color: #d9d9d9;
   margin-left: 10%;
   margin-top: 25px;
@@ -107,7 +110,7 @@
   border: 0.5rem solid black;
   padding-top: 10px;
   width: 80%;
-  height: 250px;
+  height: 200px;
   flex-direction: row-reverse;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -119,6 +122,11 @@
 
 .right_blog .blog_form .blog_submit {
   background-color: #fece00;
+  color: gray;
+  margin-top: 0px;
+  width: 200px;
+  height: 40px;
+  font-size: 14px;
 }
 
 .left_blog {
@@ -130,7 +138,10 @@
   text-align: center;
 }
 .left_blog h2 {
-  margin-top: 70px;
+  margin-top: 115px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
 }
 .left_blog hr {
   margin-top: 24.9px;

@@ -35,10 +35,7 @@ export default function Rating() {
     try {
       const res = await axios.get(`/api/comment/user/list`);
       // setCommentsCards(res.data.comments);
-      setCommentsCards((prevComments) => [
-        ...prevComments,
-        ...res.data.comments,
-      ]);
+      setCommentsCards((prevComments) => [...prevComments, ...res.data]);
     } catch (error) {
       console.log("Resource not found");
     }
