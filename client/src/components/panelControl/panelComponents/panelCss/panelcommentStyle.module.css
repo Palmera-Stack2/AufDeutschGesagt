@@ -17,6 +17,11 @@
 .right_commentheader {
   margin-top: 15px;
   margin-right: 10%;
+  margin-top: 35px;
+  margin-right: 10%;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
 }
 .right_commenthr {
   width: 100%;
@@ -52,7 +57,7 @@
 .container_comment .div_comment {
   position: relative;
   width: 90%;
-  min-height: 150px;
+  height: auto;
   flex-direction: row-reverse;
   word-wrap: break-word;
   text-align: center;
@@ -82,14 +87,15 @@
 }
 
 .div_comment .divcomment_header {
-  margin-top: 15px;
-  font-size: 2rem;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
 }
 .div_comment .comment_content {
   margin-top: 3px;
   margin-left: 5px;
   margin-right: 5px;
-  font-size: 1.5rem;
+  font-size: 20px;
 }
 
 .left_comment {
@@ -101,7 +107,11 @@
   text-align: center;
 }
 .left_commenth2 {
-  margin-top: 90px;
+  margin-top: 104px;
+  margin-right: 10%;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
 }
 .left_comment hr {
   margin-top: 24.9px;

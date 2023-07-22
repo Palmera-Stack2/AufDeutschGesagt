@@ -16,6 +16,9 @@
 .right_home .right_homeheader {
   margin-top: 35px;
   margin-right: 10%;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
 }
 .right_home .right_homehr {
   width: 100%;
@@ -37,14 +40,17 @@
 .right_homecontainer .right_homewrapper {
   background-color: #ffffff;
   height: 250px;
-  width: 1200px;
+  width: 1000px;
   text-align: center;
   border-radius: 15px;
   position: relative;
+  font-size: 20px;
 }
 .right_homewrapper .right_homeh3 {
   margin-top: 50px;
-  font-size: 33px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .right_homewrapper .home_faMessage {
@@ -73,6 +79,9 @@
 }
 .left_home .left_homeheader {
   margin-top: 107px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
 }
 .left_home .left_homehr {
   margin-top: 25.9px;
@@ -101,8 +110,8 @@
   border-radius: 50%;
   text-align: center;
   position: absolute;
-  left: 360px;
-  top: 200px;
+  left: 290px;
+  top: 209px;
   font-size: 18px;
 }
 @media only screen and (max-width: 375px) {
@@ -141,6 +150,7 @@
     text-align: center;
     border-radius: 15px;
     margin: 0px;
+    font-size: 14px;
   }
   .right_homewrapper .right_homeh3 {
     font-size: 20px;

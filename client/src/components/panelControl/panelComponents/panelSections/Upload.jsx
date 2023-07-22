@@ -47,7 +47,7 @@ export default function Upload() {
           Administrator Panel-Upload
         </h2>
         <hr />
-        <h2 className={panelUploadStyle.h2}>Upload a file</h2>
+        <h2 className={panelUploadStyle.uploadh2}>Upload a file</h2>
         <div className={panelUploadStyle.upload_wrapper}>
           <form
             className={panelUploadStyle.upload_form}
@@ -67,12 +67,17 @@ export default function Upload() {
             name="files"
             id="files-select"
             onChange={onOptionChangeHandler}
+            className={panelUploadStyle.option}
           >
             <option>Please choose one option</option>
             {Array.isArray(options) &&
               options.map((option) => {
                 return (
-                  <option key={option._id} value={option.filePath}>
+                  <option
+                    className={panelUploadStyle.option}
+                    key={option._id}
+                    value={option.filePath}
+                  >
                     {option.originalname}
                   </option>
                 );
@@ -83,6 +88,7 @@ export default function Upload() {
             name="files"
             id="files-select"
             onChange={onOptionChangeHandler}
+            className={panelUploadStyle.option}
           >
             <option>Please choose one option</option>
             {Array.isArray(options) &&
@@ -94,8 +100,6 @@ export default function Upload() {
                 );
               })}
           </select>
-
-          {/* {uploadedImage && <img src={uploadedImage} />} */}
         </div>
       </div>
     </div>
