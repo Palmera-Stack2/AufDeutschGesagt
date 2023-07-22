@@ -1,123 +1,90 @@
 .supportSection {
-    background-color: white;
-    height: 100%;
+    position: relative;
     width: 100%;
+    background-color: black;
 }
 
-.supportHrLine{
-    display: flex;
-    justify-content: center;
-    margin: 30px 0;
-}
-  
-.supportHr{
-    width: 80%;
-    height: 1px;
-    color: white;
-}
+.supportBackgroundImg {
+    width: 100%;
 
-.supportHeader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.supportHeading {
-    font-family: 'Roboto';
-    color: black;
-    font-size: 40px;
-    font-weight: 200;
-    text-align: center;
 }
 
 .supportContent {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-}
-
-.supportContent:hover {
-    transform: scale(1.3);
-    transition: all 0.04s ease-in-out;
-}
-
-.supportTextOne, .supportTextTwo {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    background-color: #fece00;
+
 }
 
-.supportTextOne a, .supportTextTwo a {
-    color: black;
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-weight: 100;
+.supportPixelImg {
+    width: 450px;
+}
+
+.supporth2 {
+    position: absolute;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    background-color: white;
+    border: 6px solid darkgoldenrod;
+    padding: 10px;
+    color: darkgoldenrod;
+    border-radius: 8px;
+    top: 25%;
+    font-size: 45px;
+    text-align: center;
+}
+
+.supportH2 {
+    padding: 40px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 40px;
 }
 
 .supportPatreon {
-    text-align: left;
-    font-family: 'Roboto';
-    color: black;
-    font-size: 40px;
-    font-weight: 300;
-    padding: 40px;
+    width: 100px;
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+    filter: invert(57%) sepia(2%) saturate(18%) hue-rotate(319deg) brightness(90%) contrast(88%);
 }
 
-.supportImageOne {
-    width: 90px;
-    height: 90px;
+.supportPaypal {
+    width: 130px;
+    position: absolute;
+    bottom: 25%;
+    right: 10%;
+    filter: invert(57%) sepia(2%) saturate(18%) hue-rotate(319deg) brightness(90%) contrast(88%);
 }
 
-.supportImageTwo {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-} 
 
-@media screen and (min-width: 991px) {
+@media (min-width: 300px) and (max-width: 1200px) {
+    .supportPixelImg {
+        width: 300px;
+    }
 
-    .supportHrLine{
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
+    .supporth2 {
+        font-size: 16px;
+        text-align: center;
+        padding: 5px;
+        top: 10%;
+        border: 3px solid darkgoldenrod;
     }
-      
-    .supportHr{
-        width: 80%;
-        height: 1px;
-        color: white;
+
+    .supportH2 {
+        font-size: 16px;
     }
-    
-    .supportHeader {
-        display: inline-block;
-        align-items: flex-start;
-    }
-    
-    .supportHeader .supportHeading {
-        text-align: left;
-        letter-spacing: 8px;
+
+
+    .supportPatreon {
+        width: 50px;
 
     }
 
-    .supportContent {
-        display: flex;
-        flex-direction: column;
-        margin-left: 600px;
-        margin-bottom: 30px; 
+    .supportPaypal {
+        width: 60px;
     }
 
-    .supportTextOne { 
-        margin-right: 35px;
-    }
-    
-    .supportTextOne, .supportTextTwo {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-    }
-
-} 
 
 
+}

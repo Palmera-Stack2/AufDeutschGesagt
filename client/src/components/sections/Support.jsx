@@ -1,26 +1,30 @@
 import supportStyle from './Support.module.css';
-
+import fondo from "../../assets/fondoSupport2.png"
+import pixelImg from '../../assets/pixelRobin.png';
+import Patreon from '../../assets/patreon.png';
+import Paypal from '../../assets/paypal.png';
 const Support = () => {
   return (
     <div className={supportStyle.supportSection}>
-      <div className={supportStyle.supportHrLine}>
-          <hr className={supportStyle.supportHr} />
-      </div>
-      <div className={supportStyle.supportHeader}>
-        <h4 className={supportStyle.supportHeading}>
-           &quot;Your support makes <br /> 
-           a difference&quot;
-        </h4>
-      </div>  
-      <div className={supportStyle.supportContent}>
-        <div className={supportStyle.supportTextOne}>          
-        <img className={supportStyle.supportImageOne} src="./src/assets/patreon.png"></img>
-        <h4 className={supportStyle.supportPatreon}><a href="https://www.patreon.com/aufdeutschgesagt/about">Be a Patron !</a></h4>
+      <div className={supportStyle.supportBackground}>
+
+        <img className={supportStyle.supportBackgroundImg} src={fondo}></img>
+
+        <div className={supportStyle.supportContent}>
+          <h2 className={supportStyle.supporth2}>Auf Deutsch gesagt! ist ein Herzensprojekt, das Zeit <br /> und Geld kostet.</h2>
+
+          <img className={supportStyle.supportPixelImg} src={pixelImg}></img>
+
+          <h2 className={supportStyle.supportH2}>Wenn dir die kostenfreien Inhalte gefallen, kannst du hier Danke sagen:</h2>
+
         </div>
-        <div className={supportStyle.supportTextTwo}>
-        <img className={supportStyle.supportImageTwo} src="./src/assets/paypal.jpg"></img>
-        <h4><a href="https://www.paypal.com/">Make a Change !</a> </h4>
-        </div>
+
+        <a href='https://www.patreon.com/aufdeutschgesagt' target='blanc'><img className={supportStyle.supportPatreon} src={Patreon}></img></a>
+        <a href='https://www.paypal.com/paypalme/aufdeutschgesagt?locale.x=de_DE' target='blanc'><img className={supportStyle.supportPaypal} src={Paypal}></img></a>
+
+
+
+
       </div>
     </div>
   );
