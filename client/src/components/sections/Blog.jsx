@@ -13,7 +13,6 @@ function Blog() {
 
   return (
     <div className={blogStyle.blogSection}>
-
       <div className={blogStyle.blogHeader}>
         <h3 className={blogStyle.blogH3}>Auf Deutsch Gesagt </h3>
         <h2 className={blogStyle.blogH2}>Blog</h2>
@@ -31,7 +30,10 @@ function Blog() {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. In
             assumenda officia ad illum fugiat, assumenda!
           </p>
-          <button className={blogStyle.blogReadMoreBtn} onClick={handleReadMore}>
+          <button
+            className={blogStyle.blogReadMoreBtn}
+            onClick={handleReadMore}
+          >
             {isClicked}
           </button>
         </div>
@@ -42,14 +44,11 @@ function Blog() {
       </div> */}
 
       {showText && (
-
-
         <div className={blogStyle.blogParagraph}>
           <div className={blogStyle.blogLine}>
             <hr className={blogStyle.blogLinee} />
           </div>
           <p className={blogStyle.blogPara}>
-
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
             distinctio earum accusantium quisquam vel debitis? Labore nobis
             assumenda exercitationem, consectetur adipiscing elit, sed do
