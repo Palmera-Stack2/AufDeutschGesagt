@@ -9,6 +9,9 @@
 .link {
   color: white;
 }
+.link:hover {
+  color: white;
+}
 .btn_logout {
   background-color: #908b8b;
   padding: 5px;
