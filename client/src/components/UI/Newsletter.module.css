@@ -26,12 +26,12 @@
     display: flex;
     flex-direction: column;
     padding: 15px;
-    margin-top: 20px;
+    margin: 20px 0 0 30px;
 }
 
 
 .signIn h1 {
-    font-size: 1.6rem;
+    font-size: 20px;
     font-weight: 300;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -40,10 +40,14 @@
 }
 
 .signIn p {
-    font-size: 1.5rem;
+    font-size: 14px;
     text-align: center;
     margin-top: 40px;
     color: white;
+}
+
+.signIn input {
+    font-size: 18px;
 }
 
 
@@ -58,14 +62,14 @@
 .middle,
 .bottom {
     margin-top: 15px;
-    padding: 15px;
+    padding: 5px;
     border-radius: 10px;
-    font-size: 1.6rem;
+    font-size: 20px;
 }
 
 .newsButton {
     margin-top: 20px;
-    font-size: 1.2rem;
+    font-size: 18px;
     width: 100%;
     border-radius: 10px;
     background-color: #fece00;
@@ -85,9 +89,11 @@
 }
 
 .privacyPolicyWrapper {
-    margin-top: 50px;
     width: 100%;
-    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .privacyPolicyWrapper:hover {
@@ -112,7 +118,8 @@
 }
 
 .privacyButton {
-    margin-top: 20px;
+    margin-top: 40px;
+    width: 230px;
 
 }
 
@@ -127,12 +134,8 @@
 @media (max-width: 1000px) {
 
 
-    .newsForm {
-        margin-top: 50px;
-        width: 80%;
-        margin-top: 50px;
-        background-color: black;
-        margin: auto;
+    .signIn input {
+        font-size: 14px;
     }
 
     .signIn h1 {
@@ -144,7 +147,7 @@
 
     .newsButton {
         margin-top: 30px;
-        font-size: 1.3rem;
+        font-size: 14px;
     }
 
 

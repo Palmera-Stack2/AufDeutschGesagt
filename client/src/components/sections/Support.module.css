@@ -39,6 +39,7 @@
     padding: 40px;
     font-family: 'Oleo Script Swash Caps', cursive;
     font-size: 40px;
+    text-align: center;
 }
 
 .supportPatreon {
@@ -55,6 +56,18 @@
     bottom: 25%;
     right: 10%;
     filter: invert(57%) sepia(2%) saturate(18%) hue-rotate(319deg) brightness(90%) contrast(88%);
+}
+
+.supportPatreon:hover {
+    filter: invert(48%) sepia(100%) saturate(385%) hue-rotate(3deg) brightness(93%) contrast(87%);
+
+
+}
+
+.supportPaypal:hover {
+    filter: invert(48%) sepia(100%) saturate(385%) hue-rotate(3deg) brightness(93%) contrast(87%);
+
+
 }
 
 

@@ -43,7 +43,7 @@ const Navbar = () => {
               {" "}
               <li>Blog</li>{" "}
             </HashLink>
-            <HashLink to={"/#kontat"}>
+            <HashLink to={"/#kontakt"}>
               {" "}
               <li>Kontakt</li>{" "}
             </HashLink>

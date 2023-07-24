@@ -191,6 +191,8 @@ const Newsletter = () => {
                         <button onClick={handlePrivacyPolicyClick} className={newsLetterStyle.privacyButton}>
                             Datenschutzerklärung
                         </button>
+                        <br />
+                        <br />
                         <label className={newsLetterStyle.checkbox}>
                             <input
                                 type="checkbox"
