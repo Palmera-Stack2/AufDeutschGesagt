@@ -3,9 +3,14 @@ import footerStyle from "./Footer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import insta from "../../assets/insta.png";
+import itunes from "../../assets/Itunes.png";
+import patreon from "../../assets/patreon.png";
+import facebook from "../../assets/face.png";
+import youtube from "../../assets/youtube.png";
+
 export default function Footer() {
   return (
-    <div className={footerStyle.footerContainer}>
+    <div id="kontakt" className={footerStyle.footerContainer}>
       <div className={footerStyle.hrDiv}>
         <hr className={footerStyle.footerHr} />
       </div>
@@ -28,7 +33,7 @@ export default function Footer() {
             href="https://podcasts.apple.com/us/podcast/id1455018378?mt=2"
             target="blanc"
           >
-            <img src="./src/assets/Itunes.png"></img>
+            <img src={itunes}></img>
           </a>
 
           <a
@@ -36,18 +41,18 @@ export default function Footer() {
             target="blanc"
           >
             {" "}
-            <img src="./src/assets/patreon.png"></img>
+            <img src={patreon}></img>
           </a>
 
           <a
             href=" https://www.facebook.com/Auf-Deutsch-gesagt-Podcast-2244379965835103/"
             target="blanc"
           >
-            <img src="./src/assets/face.png"></img>
+            <img src={facebook}></img>
           </a>
 
           <a href="https://www.youtube.com/c/AufDeutschgesagt" target="blanc">
-            <img src="./src/assets/youtube.png"></img>
+            <img src={youtube}></img>
           </a>
         </div>
 

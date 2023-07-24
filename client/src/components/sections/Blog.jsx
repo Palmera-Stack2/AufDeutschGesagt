@@ -12,7 +12,7 @@ function Blog() {
   };
 
   return (
-    <div className={blogStyle.blogSection}>
+    <div id="blog" className={blogStyle.blogSection}>
       <div className={blogStyle.blogHeader}>
         <h3 className={blogStyle.blogH3}>Auf Deutsch Gesagt </h3>
         <h2 className={blogStyle.blogH2}>Blog</h2>
