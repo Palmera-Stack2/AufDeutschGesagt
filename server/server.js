@@ -70,7 +70,7 @@ app.use("/uploads", express.static("./uploads"));
 // app.use(express.static(path.join(__dirname, "../client/dist")));
 //any other request made serve the index.html of our production build frontend.
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/views/dist/index.html");
+  res.sendFile(__dirname + "/dist/index.html");
 });
 
 app.listen(process.env.PORT || 3001, () => {
