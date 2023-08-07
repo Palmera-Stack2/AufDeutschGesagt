@@ -14,12 +14,17 @@ const Newsletter = () => {
         setShowPrivacyPolicy(!showPrivacyPolicy);
     };
 
+    const successMessage = () => {
+
+        return alert('You have successfully submit your email!');
+    };
+
     const handleSubmit = async (event) => {
         event.preventDefault();
 
         if (!isChecked) {
             // Mostrar un mensaje de error indicando que deben aceptar la Política de Privacidad
-            return;
+            return alert('Bite lessen Sie die Datenschutzerklärung');
         }
 
         const formData = new FormData(event.target);
@@ -33,6 +38,7 @@ const Newsletter = () => {
         try {
             const response = await axios.post("/api/mail/signup", data);
             console.log(response, "testing");
+            successMessage();
         } catch (error) {
             console.log('Error al enviar la solicitud:', error);
         }
@@ -42,7 +48,7 @@ const Newsletter = () => {
         <div className={newsLetterStyle.newsLetterContainer}>
             {showPrivacyPolicy && (
                 <div className={newsLetterStyle.privacyPolicyDiv}>
-                    <p className={newsLetterStyle.paragraphPolicy}>
+                    <div className={newsLetterStyle.paragraphPolicy}>
                         <strong>Datenschutzerklärung von Site #1</strong> <br />
 
                         Um Informationen zu den personenbezogenen Daten, dem Zweck und den Parteien, welchen diese Daten mitgeteilt werden, zu erhalten, kontaktieren Sie den Eigentümer<br />
@@ -63,7 +69,7 @@ const Newsletter = () => {
                         Personenbezogene Daten können vom Nutzer freiwillig angegeben oder, im Falle von Nutzungsdaten, automatisch erhoben werden, wenn diese Anwendung genutzt wird.
                         Sofern nicht anders angegeben, ist die Angabe aller durch diese Anwendung angeforderten Daten obligatorisch. Weigert sich der Nutzer, die Daten anzugeben, kann dies dazu führen, dass diese Anwendung dem Nutzer ihre Dienste nicht zur Verfügung stellen kann. In Fällen, in denen diese Anwendung die Angabe personenbezogener Daten ausdrücklich als freiwillig bezeichnet, dürfen sich die Nutzer dafür entscheiden, diese Daten ohne jegliche Folgen für die Verfügbarkeit oder die Funktionsfähigkeit des Dienstes nicht anzugeben.
                         Nutzer, die sich darüber im Unklaren sind, welche personenbezogenen Daten obligatorisch sind, können sich an den Anbieter wenden.
-                        Jegliche Verwendung von Cookies – oder anderer Tracking-Tools – durch diese Anwendung oder Anbieter von Drittdiensten, die durch diese Anwendung eingesetzt werden, dient dem Zweck, den vom Nutzer gewünschten Dienst zu erbringen, und allen anderen Zwecken, die im vorliegenden Dokument und, falls vorhanden, in der Cookie-Richtlinie beschrieben sind.
+                        Jegliche Verwendung von Cookies  oder anderer Tracking-Tools  durch diese Anwendung oder Anbieter von Drittdiensten, die durch diese Anwendung eingesetzt werden, dient dem Zweck, den vom Nutzer gewünschten Dienst zu erbringen, und allen anderen Zwecken, die im vorliegenden Dokument und, falls vorhanden, in der Cookie-Richtlinie beschrieben sind.
 
                         Die Nutzer sind für alle personenbezogenen Daten Dritter verantwortlich, die durch diese Anwendung beschafft, veröffentlicht oder weitergegeben werden, und bestätigen, dass sie die Zustimmung zur Übermittlung personenbezogener Daten etwaiger Dritter an diese Anwendung eingeholt haben.<br />
                         <br />
@@ -170,11 +176,11 @@ const Newsletter = () => {
                         <br />
                         Soweit Änderungen eine auf der Einwilligung des Nutzers basierte Datennutzung betreffen, so wird der Anbieter - soweit erforderlich - eine neue Einwilligung einholen.<br />
                         <br />
-                        <italic>Letzte Aktualisierung: 15 Juli 2023</italic><br />
+                        <i>Letzte Aktualisierung: 15 Juli 2023</i><br />
                         <br />
                         iubenda hostet diese Inhalte und erhebt nur die personenbezogenen Daten, die unbedingt erforderlich sind, um sie zur Verfügung zu stellen.
 
-                    </p>
+                    </div>
                 </div>
             )}
             <div className={newsLetterStyle.newsForm}>

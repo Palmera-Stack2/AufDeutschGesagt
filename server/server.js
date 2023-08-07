@@ -15,6 +15,7 @@ import fileRoutes from "./routes/fileRoutes.js";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import path from "path";
+import mailRoute from "./routes/mailRoutes.js";
 
 const __filename = fileURLToPath(import.meta.url); // get the current file location of server.js
 const __dirname = dirname(__filename); //extract directory from that location.
@@ -57,6 +58,7 @@ mongoose
     console.log("🤨");
   });
 
+app.use("/api/mail", mailRoute);
 app.use("/api/user", userRoutes);
 app.use("/api/comment", commentRoutes);
 app.use("/api/post", postRoutes);

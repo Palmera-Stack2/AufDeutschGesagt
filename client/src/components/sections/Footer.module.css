@@ -31,9 +31,10 @@
 }
 
 .flagPin img {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   margin-left: 80px;
+  margin-top: 5px;
 }
 
 .h3footer {
