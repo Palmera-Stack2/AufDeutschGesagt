@@ -5,6 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
 export default function CommentSection() {
   const [rating, setRating] = useState(0);
+  const successMessage = () => {
+    return alert("You have successfully submit your comment");
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -16,6 +20,7 @@ export default function CommentSection() {
     try {
       const res = await axios.post("/api/comment/user/create", data);
       console.log(res.data);
+      successMessage();
     } catch (error) {
       console.error("there was an error", error);
     }

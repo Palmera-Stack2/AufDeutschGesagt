@@ -44,9 +44,16 @@
 }
 
 .HeadphonesIcon {
+  display: flex;
+  gap: 18px;
   margin-bottom: 400px;
+  color: #fece00;
+  font-size: 1rem;
+  font-weight: 700;
 }
-
+.HeadphonesIcon .reviews_text {
+  color: gray;
+}
 .faHeadphones {
   font-size: 4rem;
   color: gray;

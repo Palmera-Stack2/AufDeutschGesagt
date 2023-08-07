@@ -12,6 +12,7 @@ export default function PanelComment() {
   const [dateToday, setDateToday] = useState("");
   const [comments, setComments] = useState([]);
   const [deletedComments, setDeletedComments] = useState(0);
+
   useEffect(() => {
     getFormattedDate();
     fetchComments();

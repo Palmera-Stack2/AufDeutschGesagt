@@ -26,9 +26,9 @@
 }
 .upload_container .uploadh2 {
   margin-top: 40px;
-  margin-right: 10%;
+  margin-right: 5%;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -56,6 +56,11 @@
   color: gray;
   width: 200px;
 }
+.upload_restbtn {
+  background-color: #fece00;
+  color: gray;
+  width: 200px;
+}
 @media only screen and (max-width: 375px) {
   .hero_upload {
     font-size: 0.9rem;
@@ -65,18 +70,21 @@
     width: 90%;
     height: 95%;
     margin-right: 0;
-    margin-top: 30px;
+    margin-top: 2px;
     text-align: center;
   }
   .upload_container .upload_heder {
     font-size: 0.9rem;
   }
-  .upload_container .h2 {
-    font-size: 0.9rem;
+
+  .upload_container .uploadh2 {
+    margin-top: 0px;
+    font-size: 16px;
   }
 
   .upload_wrapper {
     width: 90%;
+    height: 69%;
   }
   .upload_wrapper .upload_form {
     flex-direction: column;
@@ -92,13 +100,17 @@
   .upload_form .upload_button {
     background-color: #fece00;
     color: gray;
-    width: 200px;
-    font-size: 0.9rem;
+    width: 150px;
   }
   .upload_wrapper .upload_subheader {
     font-size: 0.9rem;
   }
   .option {
     width: 200px;
+  }
+  .upload_restbtn {
+    background-color: #fece00;
+    color: gray;
+    width: 150px;
   }
 }
