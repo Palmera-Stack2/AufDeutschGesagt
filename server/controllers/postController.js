@@ -23,19 +23,9 @@ export const OwnerListPost = async (req, res) => {
  */
 export const ListPost = async (req, res) => {
   try {
-    const page = parseInt(req.query.page) || 1; // Get the page number from query parameters or default to 1
-    const limit = 6; // Number of documents to fetch per page
-    const skip = (page - 1) * limit; // Calculate the number of documents to skip based on the page number
+    const posts = await Post.find();
 
-    const totalPosts = await Post.countDocuments(); // Get the total count of meditations
-    const posts = await Post.find().skip(skip).limit(limit); // Fetch the meditations based on skip and limit
-
-    return res.status(StatusCodes.OK).json({
-      page,
-      limit,
-      totalPosts,
-      posts,
-    });
+    return res.status(StatusCodes.OK).json(posts);
   } catch (error) {
     return res
       .status(StatusCodes.INTERNAL_SERVER_ERROR)

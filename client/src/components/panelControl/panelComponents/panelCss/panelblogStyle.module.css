@@ -93,6 +93,7 @@
   height: 50px;
   background-color: transparent;
   border: none;
+  outline: none;
 }
 .bligicon_btn:focus {
   border: none;

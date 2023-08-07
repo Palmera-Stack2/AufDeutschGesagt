@@ -13,10 +13,6 @@ export const OwnerListComment = async (req, res) => {
       comment.isRead = true;
       await comment.save();
     }
-    // const page = parseInt(req.query.page) || 1;
-    // const limit = 3;
-    // const skip = (page - 1) * limit;
-    // const totalComments = await Comment.countDocuments();
 
     const updatedComments = await Comment.find();
 
@@ -102,7 +98,7 @@ export const rating = async (req, res) => {
     // Convert the average rating to a percentage
     const averageRatingPercent = (averageRating / 5) * 100;
 
-    res.status(StatusCodes.OK).json({ averageRatingPercent });
+    res.status(StatusCodes.OK).json(averageRatingPercent);
   } catch (error) {
     return res
       .status(StatusCodes.INTERNAL_SERVER_ERROR)

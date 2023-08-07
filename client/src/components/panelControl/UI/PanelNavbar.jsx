@@ -35,12 +35,7 @@ export default function PanelNavbar() {
           Comments
         </HashLink>
       </button>
-      <button className={style.btn_logout}>
-        <HashLink to={"/upload"} className={style.link}>
-          {" "}
-          Upload
-        </HashLink>
-      </button>
+
       <button className={style.btn_logout} onClick={handleSignOut}>
         Log out
       </button>
