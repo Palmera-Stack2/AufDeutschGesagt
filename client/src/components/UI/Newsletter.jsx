@@ -5,6 +5,20 @@ import axios from "axios";
 const Newsletter = () => {
     const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
     const [isChecked, setIsChecked] = useState(false);
+    const [formData, setFormData] = useState({
+        fName: '',
+        lName: '',
+        email: ''
+    });
+
+    const handleInputChange = (event) => {
+        const { name, value } = event.target;
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value
+        }));
+    };
+
 
     const handleCheckboxChange = () => {
         setIsChecked(!isChecked);
@@ -27,18 +41,24 @@ const Newsletter = () => {
             return alert('Bite lessen Sie die Datenschutzerklärung');
         }
 
-        const formData = new FormData(event.target);
+
 
         const data = {
-            fName: formData.get("fName"),
-            lName: formData.get("lName"),
-            email: formData.get("email")
+            fName: formData.fName,
+            lName: formData.lName,
+            email: formData.email
         }
 
         try {
             const response = await axios.post("/api/mail/signup", data);
             console.log(response, "testing");
             successMessage();
+            setFormData({
+                fName: '',
+                lName: '',
+                email: '',
+            });
+
         } catch (error) {
             console.log('Error al enviar la solicitud:', error);
         }
@@ -186,9 +206,9 @@ const Newsletter = () => {
             <div className={newsLetterStyle.newsForm}>
                 <form action="/" className={newsLetterStyle.signIn} method="POST" onSubmit={handleSubmit}>
                     <h1>Melde dich für meinen Newsletter an!</h1>
-                    <input type="text" name="fName" className={newsLetterStyle.top} placeholder="Name" required />
-                    <input type="text" name="lName" className={newsLetterStyle.middle} placeholder="Nachname" required />
-                    <input type="text" name="email" className={newsLetterStyle.bottom} placeholder="Email" required />
+                    <input type="text" name="fName" className={newsLetterStyle.top} placeholder="Name" value={formData.fName} onChange={handleInputChange} required />
+                    <input type="text" name="lName" className={newsLetterStyle.middle} placeholder="Nachname" value={formData.lName} onChange={handleInputChange} required />
+                    <input type="text" name="email" className={newsLetterStyle.bottom} placeholder="Email" value={formData.email} onChange={handleInputChange} required />
 
 
                     <button className={newsLetterStyle.newsButton} type='submit'>Sign me Up!</button>
