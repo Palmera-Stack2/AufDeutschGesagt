@@ -3,6 +3,11 @@ import commentStyle from "./Comment.module.css";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
+import insta from "../../assets/insta.png";
+import itunes from "../../assets/Itunes.png";
+import patreon from "../../assets/patreon.png";
+import facebook from "../../assets/face.png";
+import youtube from "../../assets/youtube.png";
 
 
 
@@ -113,7 +118,7 @@ export default function CommentSection() {
           >
             <img
               className={commentStyle.comment_socialIconsImg}
-              src="./src/assets/insta.png"
+              src={insta}
             ></img>
           </a>
           <a
@@ -123,7 +128,7 @@ export default function CommentSection() {
           >
             <img
               className={commentStyle.comment_socialIconsImg}
-              src="./src/assets/Itunes.png"
+              src={itunes}
             ></img>
           </a>
           <a
@@ -133,7 +138,7 @@ export default function CommentSection() {
           >
             <img
               className={commentStyle.comment_socialIconsImg}
-              src="./src/assets/patreon.png"
+              src={patreon}
             ></img>
           </a>
           <a
@@ -143,7 +148,7 @@ export default function CommentSection() {
           >
             <img
               className={commentStyle.comment_socialIconsImg}
-              src="./src/assets/face.png"
+              src={facebook}
             ></img>
           </a>
           <a
@@ -153,7 +158,7 @@ export default function CommentSection() {
           >
             <img
               className={commentStyle.comment_socialIconsImg}
-              src="./src/assets/youtube.png"
+              src={youtube}
             ></img>
           </a>
         </div>

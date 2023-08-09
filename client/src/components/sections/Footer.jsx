@@ -7,6 +7,7 @@ import itunes from "../../assets/Itunes.png";
 import patreon from "../../assets/patreon.png";
 import facebook from "../../assets/face.png";
 import youtube from "../../assets/youtube.png";
+import pinImg from "../../assets/flag-pin.png";
 
 export default function Footer() {
   return (
@@ -16,9 +17,9 @@ export default function Footer() {
       </div>
 
       <div className={footerStyle.flagPin}>
-        <img src="./src/assets/flag-pin.png" alt="flag-pin"></img>
+        <img src={pinImg} alt="flag-pin"></img>
         <div className={footerStyle.h3footer}>
-          <h3>Auf Deutsch Gesagt!</h3>
+          <h3>Auf Deutsch Gesagts!</h3>
         </div>
       </div>
 
