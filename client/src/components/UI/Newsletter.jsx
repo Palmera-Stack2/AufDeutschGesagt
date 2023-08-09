@@ -211,7 +211,7 @@ const Newsletter = () => {
                     <input type="text" name="email" className={newsLetterStyle.bottom} placeholder="Email" value={formData.email} onChange={handleInputChange} required />
 
 
-                    <button className={newsLetterStyle.newsButton} type='submit'>Sign me Up!</button>
+                    <button className={newsLetterStyle.newsButton} type='submit'>Meld mich an!</button>
                     {/* <p className={newsLetterStyle.copyright}>&copy; 2023</p> */}
                     <div className={newsLetterStyle.privacyPolicyWrapper}>
                         <button onClick={handlePrivacyPolicyClick} className={newsLetterStyle.privacyButton}>

@@ -96,12 +96,17 @@ iframe {
   text-decoration: underline;
 }
 
-.textAbout .aboutBtn {
+.aboutBtn {
   background-color: #fece00;
   color: gray;
   margin-top: 50px;
   width: 200px;
   float: right;
+}
+
+.aboutBtn:hover {
+  border: solid 1px blue;
+  color: blue;
 }
 
 

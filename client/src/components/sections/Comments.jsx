@@ -65,7 +65,7 @@ export default function CommentSection() {
     <div id="comment-section" className={commentStyle.commentSection}>
       <form className={commentStyle.comment_form} onSubmit={handleSubmit}>
         <h2 className={commentStyle.commenth2}>
-          leave me a comment and rate my content!
+          Hinterlasse mir einen Kommentar und bewerte meinen Inhalt!
         </h2>
 
         <label className={commentStyle.comment_label} htmlFor="name">
@@ -73,7 +73,7 @@ export default function CommentSection() {
         </label>
 
         <input
-          placeholder="Your name here..."
+          placeholder="Dein Name hier..."
           className={commentStyle.comment_nameArea}
           name="userName"
           type="text"
@@ -85,7 +85,7 @@ export default function CommentSection() {
           Comment
         </label>
         <textarea
-          placeholder="Your comment here..."
+          placeholder="Dein Kommentar hier..."
           name="comment"
           className={commentStyle.comment_textArea}
           id="comment"

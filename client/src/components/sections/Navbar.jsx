@@ -45,6 +45,10 @@ const Navbar = () => {
               {" "}
               <li>Blog</li>{" "}
             </HashLink>
+            <HashLink to={"/#ünterstützen"}>
+              {" "}
+              <li>Ünterstützen</li>{" "}
+            </HashLink>
             <HashLink to={"/#kontakt"}>
               {" "}
               <li>Kontakt</li>{" "}

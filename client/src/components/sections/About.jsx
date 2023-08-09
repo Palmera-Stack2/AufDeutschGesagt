@@ -72,7 +72,7 @@ export default function About() {
 
             </span>) : (<span>...</span>)
             }</p>
-          <button className={aboutStyle.aboutBtn} onClick={toggleShowAll}> {showAll ? 'Read less' : 'Read More'}</button>
+          <button className={aboutStyle.aboutBtn} onClick={toggleShowAll}> {showAll ? 'Weniger lesen' : 'Mehr lesen'}</button>
         </div>
 
 

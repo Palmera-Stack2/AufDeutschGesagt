@@ -5,12 +5,12 @@ import axios from "axios";
 
 function Blog() {
   const [showText, setShowText] = useState(false);
-  const [isClicked, setIsClicked] = useState("Read More");
+  const [isClicked, setIsClicked] = useState("Mehr Lesen");
   const [posts, setPosts] = useState([]);
 
   const handleReadMore = () => {
     setShowText(!showText);
-    setIsClicked(!showText ? "Read Less" : "Read More");
+    setIsClicked(!showText ? "Weniger Lesen" : "Mehr Lesen");
   };
 
   useEffect(() => {

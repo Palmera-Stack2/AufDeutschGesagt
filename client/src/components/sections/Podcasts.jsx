@@ -1,7 +1,6 @@
 import podcastsStyle from "./Podcast.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHeadphones,
   faCirclePlay,
   faCircleStop,
 } from "@fortawesome/free-solid-svg-icons";
@@ -66,7 +65,7 @@ export default function Podcasts() {
         <div className={podcastsStyle.podcastsContent}>
           <div className={podcastsStyle.HeadphonesIcon}>
             {" "}
-            <p className={podcastsStyle.reviews_text}>Reviews</p>
+            <p className={podcastsStyle.reviews_text}>Bewertungen</p>
             {renderStars()}
             {/* <FontAwesomeIcon
               icon={faHeadphones}
@@ -114,10 +113,10 @@ export default function Podcasts() {
         </div>
         <button className={podcastsStyle.podcastBtn}>
           <a
-            href="https://www.patreon.com/aufdeutschgesagt"
+            target="blanc" href="https://shows.acast.com/aufdeutschgesagt"
             className={podcastsStyle.browseBtn}
           >
-            Browse Podcasts
+            Zum Podcast
           </a>
         </button>
       </div>

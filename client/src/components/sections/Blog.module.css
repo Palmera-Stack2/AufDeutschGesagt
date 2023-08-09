@@ -92,6 +92,11 @@
   font-size: 16px;
 }
 
+.blogReadMoreBtn:hover {
+  border: solid 1px blue;
+  color: blue;
+}
+
 .blogLine {
   display: flex;
   justify-content: center;

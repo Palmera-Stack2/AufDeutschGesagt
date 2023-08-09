@@ -76,6 +76,11 @@
     color: gray;
 }
 
+.newsButton:hover {
+    border: solid 1px blue;
+    color: blue;
+}
+
 
 .privacyPolicyDiv {
     position: absolute;

@@ -5,7 +5,7 @@ import Patreon from '../../assets/patreon.png';
 import Paypal from '../../assets/paypal.png';
 const Support = () => {
   return (
-    <div className={supportStyle.supportSection}>
+    <div id='ünterstützen' className={supportStyle.supportSection}>
       <div className={supportStyle.supportBackground}>
 
         <img className={supportStyle.supportBackgroundImg} src={fondo}></img>

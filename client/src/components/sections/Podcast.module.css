@@ -51,9 +51,11 @@
   font-size: 1rem;
   font-weight: 700;
 }
+
 .HeadphonesIcon .reviews_text {
   color: gray;
 }
+
 .faHeadphones {
   font-size: 4rem;
   color: gray;
@@ -86,6 +88,16 @@
 .podcastBtn a {
   color: gray;
 }
+
+.podcastBtn:hover {
+  border: solid 1px blue;
+  color: blue;
+}
+
+.podcastBtn a:hover {
+  color: blue;
+}
+
 
 /*/ card styles
 */

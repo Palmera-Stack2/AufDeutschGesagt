@@ -19,7 +19,7 @@ export default function Footer() {
       <div className={footerStyle.flagPin}>
         <img src={pinImg} alt="flag-pin"></img>
         <div className={footerStyle.h3footer}>
-          <h3>Auf Deutsch Gesagts!</h3>
+          <h3>Auf Deutsch Gesagt!</h3>
         </div>
       </div>
 
