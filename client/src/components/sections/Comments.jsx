@@ -3,6 +3,9 @@ import commentStyle from "./Comment.module.css";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
+
+
+
 export default function CommentSection() {
   const [rating, setRating] = useState(0);
   const successMessage = () => {

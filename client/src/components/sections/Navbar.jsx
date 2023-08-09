@@ -2,6 +2,8 @@ import { HashLink } from "react-router-hash-link";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import pinImg from "../../assets/flag-pin.png";
+
 import "../sections/Navbar.css";
 
 
@@ -18,7 +20,7 @@ const Navbar = () => {
     <nav className="nav-bar">
       <img
         className="navbar-img"
-        src="./src/assets/flag-pin.png"
+        src={pinImg}
         alt="flag-pin"
       ></img>
 

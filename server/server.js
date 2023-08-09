@@ -23,7 +23,7 @@ const __dirname = dirname(__filename); //extract directory from that location.
 dotenv.config();
 
 const app = express();
-app.use(express.static("views/dist"));
+// app.use(express.static("views/dist"));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(
@@ -67,10 +67,10 @@ app.use("/api/files", fileRoutes);
 app.use("/uploads", express.static("./uploads"));
 
 //serve our files statically
-// app.use(express.static(path.join(__dirname, "../client/dist")));
+app.use(express.static(path.join(__dirname, "/../client/dist")));
 //any other request made serve the index.html of our production build frontend.
-app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/dist/index.html");
+app.get("*", (req, res) => {
+  res.sendFile(__dirname + "/../client/dist/index.html");
 });
 
 app.listen(process.env.PORT || 3001, () => {
