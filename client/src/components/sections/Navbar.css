@@ -129,19 +129,21 @@
 
     .navbar-menu.open {
         padding-top: 80px;
-        line-height: 25px;
         display: flex;
         flex-direction: column;
         background-color: hsl(214, 33%, 46%);
         opacity: 80%;
         align-items: center;
-        width: 100%;
+        width: 30%;
         height: 160vh;
+        position: fixed;
 
     }
 
     .navbar-menu li {
-        font-weight: bold;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 20px;
         text-decoration: underline;
     }
 
@@ -152,6 +154,9 @@
 
     .x {
         display: flex;
+        right: 40px;
+        top: 20px;
+
     }
 
     .navbar-underline {

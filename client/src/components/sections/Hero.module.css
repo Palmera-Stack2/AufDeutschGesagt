@@ -5,12 +5,8 @@
 }
 
 
-.heroImageDivDiv {
-
-    width: 100%;
-    min-height: 110vh;
-
-
+.heroImageDiv {
+    margin-top: 100px;
 }
 
 .heroImg {
@@ -38,31 +34,3 @@
 @media screen and (min-width: 769px) {
     /* CSS rules for screens with a minimum width of 769 pixels */
 }
-
-
-
-/* @media (max-width: 900px) {
-    .heroImageDivDiv {
-        min-height: 95vh;
-
-    }
-
-}
-
-@media (max-width: 500px) {
-    .heroImageDiv {
- 
-        min-height: 38vh;
-        margin-top: 60px;
-    }
-
-}
-
-@media (max-width: 375px) {
-    .heroImageDiv {
-
-        min-height: 5vh;
-        margin-top: 60px;
-    }
-
-} */
