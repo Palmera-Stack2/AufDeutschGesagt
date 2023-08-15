@@ -65,7 +65,7 @@ export default function CommentSection() {
     <div id="comment-section" className={commentStyle.commentSection}>
       <form className={commentStyle.comment_form} onSubmit={handleSubmit}>
         <h2 className={commentStyle.commenth2}>
-          Hinterlasse mir einen Kommentar und bewerte meinen Inhalt!
+          Hinterlasse mir einen Kommentar und bewerte meinen Podcast!
         </h2>
 
         <label className={commentStyle.comment_label} htmlFor="name">

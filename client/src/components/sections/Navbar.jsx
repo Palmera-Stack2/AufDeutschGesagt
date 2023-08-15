@@ -31,11 +31,11 @@ const Navbar = () => {
           <ul className={`navbar-menu ${isNavOpen ? "open" : ""}`}>
             <HashLink to={"/#home"}>
               {" "}
-              <li >Home</li>{" "}
+              <li >Start</li>{" "}
             </HashLink>
             <HashLink to={"/#about"}>
               {" "}
-              <li>Über Mich</li>{" "}
+              <li>Über mich</li>{" "}
             </HashLink>
             <HashLink to={"/#podcasts"}>
               {" "}
@@ -47,7 +47,7 @@ const Navbar = () => {
             </HashLink>
             <HashLink to={"/#ünterstützen"}>
               {" "}
-              <li>Ünterstützen</li>{" "}
+              <li>Unterstützen</li>{" "}
             </HashLink>
             <HashLink to={"/#kontakt"}>
               {" "}

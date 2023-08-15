@@ -19,9 +19,16 @@ export default function Footer() {
       <div className={footerStyle.flagPin}>
         <img src={pinImg} alt="flag-pin"></img>
         <div className={footerStyle.h3footer}>
-          <h3>Auf Deutsch Gesagt!</h3>
+          <h3>Auf Deutsch gesagt!</h3>
         </div>
+
       </div>
+
+      <dvi className={footerStyle.direktKontakt}>
+        <p className={footerStyle.direktParagraph}>Du hast Fragen oder Anregungen? </p>
+        <p className={footerStyle.direktParagraph}>Dann kontaktiere mich direkt!</p>
+        <p className={footerStyle.mail}>aufdeutschgesagt@gmx.de</p>
+      </dvi>
 
       <div className={footerStyle.newsletterWrapper}>
         {/* <div className={footerStyle.follow}><img src="./src/assets/follow.png"></img></div> */}

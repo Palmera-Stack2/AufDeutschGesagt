@@ -31,19 +31,13 @@
     color: darkgoldenrod;
     border-radius: 8px;
     top: 25%;
-    font-size: 45px;
+    font-size: 35px;
     text-align: center;
 }
 
-.supportH2 {
-    padding: 40px;
-    font-family: 'Oleo Script Swash Caps', cursive;
-    font-size: 40px;
-    text-align: center;
-}
 
 .supportPatreon {
-    width: 100px;
+    width: 180px;
     position: absolute;
     bottom: 25%;
     left: 10%;
@@ -51,9 +45,9 @@
 }
 
 .supportPaypal {
-    width: 130px;
+    width: 220px;
     position: absolute;
-    bottom: 25%;
+    bottom: 22%;
     right: 10%;
     filter: invert(57%) sepia(2%) saturate(18%) hue-rotate(319deg) brightness(90%) contrast(88%);
 }

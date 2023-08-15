@@ -29,13 +29,13 @@ function Blog() {
   const lastPostContent =
     posts.length > 0 ? posts[posts.length - 1].content : "";
   const words = lastPostContent.split(" ");
-  const first15Words = words.slice(0, 20).join(" ");
-  const restOfTheWords = words.slice(20).join(" ");
+  const first15Words = words.slice(0, 12).join(" ");
+  const restOfTheWords = words.slice(12).join(" ");
 
   return (
     <div id="blog" className={blogStyle.blogSection}>
       <div className={blogStyle.blogHeader}>
-        <h3 className={blogStyle.blogH3}>Auf Deutsch Gesagt </h3>
+        <h3 className={blogStyle.blogH3}>Auf Deutsch gesagt!</h3>
         <h2 className={blogStyle.blogH2}>Blog</h2>
       </div>
 
@@ -48,6 +48,14 @@ function Blog() {
         </div>
         <div className={blogStyle.blogText}>
           <p className={blogStyle.blogTextPara}>{first15Words}</p>
+          {showText && (
+            <div className={blogStyle.blogParagraph}>
+              <div className={blogStyle.blogLine}>
+
+              </div>
+              <p className={blogStyle.blogPara}>{restOfTheWords}</p>
+            </div>
+          )}
           <button
             className={blogStyle.blogReadMoreBtn}
             onClick={handleReadMore}
@@ -61,14 +69,7 @@ function Blog() {
         <hr className={blogStyle.blogLinee} />
       </div> */}
 
-      {showText && (
-        <div className={blogStyle.blogParagraph}>
-          <div className={blogStyle.blogLine}>
-            <hr className={blogStyle.blogLinee} />
-          </div>
-          <p className={blogStyle.blogPara}>{restOfTheWords}</p>
-        </div>
-      )}
+
     </div>
   );
 }

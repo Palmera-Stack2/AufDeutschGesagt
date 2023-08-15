@@ -75,7 +75,7 @@ export default function Rating() {
   return (
     <div id="rating" className={ratingStyle.ratingSection}>
       <div className={ratingStyle.ratingheader}>
-        <h3 className={ratingStyle.ratingH3}>Auf Deutsch Gesagt </h3>
+        <h3 className={ratingStyle.ratingH3}>Auf Deutsch gesagt! </h3>
         <h2 className={ratingStyle.ratingh2}>Testimonials</h2>
       </div>
       <div className={ratingStyle.ratingHrDiv}>
@@ -90,7 +90,7 @@ export default function Rating() {
               style={{
                 display:
                   index >= (slideIndex - 1) * cardsPerPage &&
-                  index < slideIndex * cardsPerPage
+                    index < slideIndex * cardsPerPage
                     ? "flex"
                     : "none",
               }}

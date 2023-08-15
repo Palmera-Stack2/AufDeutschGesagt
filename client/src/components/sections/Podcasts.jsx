@@ -56,8 +56,8 @@ export default function Podcasts() {
     <div id="podcasts" className={podcastsStyle.podcastsSection}>
       <div className={podcastsStyle.podcastsContainer}>
         <div className={podcastsStyle.podcastsHeader}>
-          <h3 className={podcastsStyle.podcasth3}>Auf Deutsch Gesagt </h3>{" "}
-          <h2 className={podcastsStyle.podcasth2}>Podcasts</h2>
+          <h3 className={podcastsStyle.podcasth3}>Auf Deutsch gesagt! </h3>{" "}
+          <h2 className={podcastsStyle.podcasth2}>Podcast</h2>
         </div>
         <div className={podcastsStyle.hrDiv}>
           <hr className={podcastsStyle.Hr} />

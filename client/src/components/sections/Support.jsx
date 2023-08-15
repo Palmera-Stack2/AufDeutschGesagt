@@ -11,11 +11,9 @@ const Support = () => {
         <img className={supportStyle.supportBackgroundImg} src={fondo}></img>
 
         <div className={supportStyle.supportContent}>
-          <h2 className={supportStyle.supporth2}>Auf Deutsch gesagt! ist ein Herzensprojekt, das Zeit <br /> und Geld kostet.</h2>
+          <h2 className={supportStyle.supporth2}>Auf Deutsch gesagt! ist ein Herzensprojekt, das Zeit <br /> und Geld kostet. <br />Wenn dir die kostenfreien Inhalte gefallen, kannst du hier Danke sagen </h2>
 
           <img className={supportStyle.supportPixelImg} src={pixelImg}></img>
-
-          <h2 className={supportStyle.supportH2}>Wenn dir die kostenfreien Inhalte gefallen, kannst du hier Danke sagen:</h2>
 
         </div>
 

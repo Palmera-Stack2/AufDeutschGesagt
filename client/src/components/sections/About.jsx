@@ -19,7 +19,7 @@ export default function About() {
     <div id="about" className={aboutStyle.pageSection}>
 
       <div className={aboutStyle.aboutHeader}>
-        <h3 className={aboutStyle.abouth3}>Auf Deutsch Gesagt</h3>
+        <h3 className={aboutStyle.abouth3}>Auf Deutsch gesagt!</h3>
         <h2 className={aboutStyle.abouth2}>Über Mich</h2>
 
       </div>
