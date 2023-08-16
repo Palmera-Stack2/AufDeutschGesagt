@@ -24,11 +24,11 @@ export default function Footer() {
 
       </div>
 
-      <dvi className={footerStyle.direktKontakt}>
+      {/* <dvi className={footerStyle.direktKontakt}>
         <p className={footerStyle.direktParagraph}>Du hast Fragen oder Anregungen? </p>
         <p className={footerStyle.direktParagraph}>Dann kontaktiere mich direkt!</p>
         <p className={footerStyle.mail}>aufdeutschgesagt@gmx.de</p>
-      </dvi>
+      </dvi> */}
 
       <div className={footerStyle.newsletterWrapper}>
         {/* <div className={footerStyle.follow}><img src="./src/assets/follow.png"></img></div> */}
