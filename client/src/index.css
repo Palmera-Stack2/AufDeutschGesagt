@@ -30,7 +30,13 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-
+  background-color: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  /* Change the background color for dark mode */
+  body {
+    background-color: #8a1b1b; /* You can choose your preferred dark mode background color here */
+  }
 }
 
 h1 {
