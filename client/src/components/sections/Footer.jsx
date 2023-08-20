@@ -19,9 +19,8 @@ export default function Footer() {
       <div className={footerStyle.flagPin}>
         <img src={pinImg} alt="flag-pin"></img>
         <div className={footerStyle.h3footer}>
-          <h3>Auf Deutsch gesagt!</h3>
+          <h3 className={footerStyle.footer_h3}>Auf Deutsch gesagt!</h3>
         </div>
-
       </div>
 
       {/* <dvi className={footerStyle.direktKontakt}>
