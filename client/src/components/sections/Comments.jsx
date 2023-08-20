@@ -15,6 +15,7 @@ export default function CommentSection() {
   const [rating, setRating] = useState(0);
   const successMessage = () => {
     return alert("You have successfully submit your comment");
+
   };
 
   const handleSubmit = async (event) => {
