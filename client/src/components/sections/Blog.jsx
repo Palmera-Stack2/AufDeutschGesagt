@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Boat from "../../assets/boat.png";
+import Boat from "../../assets/1. Robin Studio_Moment2.jpg";
 import blogStyle from "./Blog.module.css";
 import axios from "axios";
 
@@ -29,14 +29,14 @@ function Blog() {
   const lastPostContent =
     posts.length > 0 ? posts[posts.length - 1].content : "";
   const words = lastPostContent.split(" ");
-  const first15Words = words.slice(0, 12).join(" ");
-  const restOfTheWords = words.slice(12).join(" ");
+  const first15Words = words.slice(0, 30).join(" ");
+  const restOfTheWords = words.slice(30).join(" ");
 
   return (
     <div id="blog" className={blogStyle.blogSection}>
       <div className={blogStyle.blogHeader}>
         <h3 className={blogStyle.blogH3}>Auf Deutsch gesagt!</h3>
-        <h2 className={blogStyle.blogH2}>Blog</h2>
+        <h2 className={blogStyle.blogH2}>Aktuelles</h2>
       </div>
 
       <div className={blogStyle.blogHrDiv}>
@@ -50,9 +50,7 @@ function Blog() {
           <p className={blogStyle.blogTextPara}>{first15Words}</p>
           {showText && (
             <div className={blogStyle.blogParagraph}>
-              <div className={blogStyle.blogLine}>
-
-              </div>
+              <div className={blogStyle.blogLine}></div>
               <p className={blogStyle.blogPara}>{restOfTheWords}</p>
             </div>
           )}
@@ -68,8 +66,6 @@ function Blog() {
       {/* <div className={blogStyle.blogLine}>
         <hr className={blogStyle.blogLinee} />
       </div> */}
-
-
     </div>
   );
 }
