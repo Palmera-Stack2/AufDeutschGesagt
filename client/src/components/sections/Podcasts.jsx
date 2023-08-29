@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCirclePlay,
   faCircleStop,
+  faHeadphones,
 } from "@fortawesome/free-solid-svg-icons";
 import cover from "../../assets/cover.png";
 import Studio from "../../assets/Studio.jpg";
@@ -63,35 +64,21 @@ export default function Podcasts() {
           <hr className={podcastsStyle.Hr} />
         </div>
         <div className={podcastsStyle.podcastsContent}>
-          <div className={podcastsStyle.HeadphonesIcon}>
-            {" "}
-            <p className={podcastsStyle.reviews_text}>Bewertungen</p>
-            {renderStars()}
-            {/* <FontAwesomeIcon
-              icon={faHeadphones}
-              className={podcastsStyle.faHeadphones}
-            /> */}
-          </div>
-
           <div className={podcastsStyle.cardSection}>
             <div className={podcastsStyle.card}>
               <div className={podcastsStyle.cardHeader}>
-                <div className={podcastsStyle.cardImg}>
-                  <img
-                    src={cover}
-                    alt="podcastCover "
-                    className={podcastsStyle.coverImg}
-                  />
-                </div>
                 <div className={podcastsStyle.playButton}>
-                  <div>
-                    <FontAwesomeIcon
-                      icon={isPlaying ? faCircleStop : faCirclePlay}
-                      className={podcastsStyle.faCirclePlay}
-                      onClick={toggleAudio}
-                    />
-                    <audio ref={Vorstellung} src={VorstellungFile} />
-                  </div>
+                  <FontAwesomeIcon
+                    icon={faHeadphones}
+                    className={podcastsStyle.faHeadphones}
+                  />
+
+                  <FontAwesomeIcon
+                    icon={isPlaying ? faCircleStop : faCirclePlay}
+                    className={podcastsStyle.faCirclePlay}
+                    onClick={toggleAudio}
+                  />
+                  <audio ref={Vorstellung} src={VorstellungFile} />
                 </div>
               </div>
               <div className={podcastsStyle.cardText}>
@@ -101,24 +88,37 @@ export default function Podcasts() {
                   Episoden.
                 </p>
               </div>
+              <div className={podcastsStyle.reviews}>
+                {" "}
+                <p className={podcastsStyle.reviews_text}>Bewertungen</p>
+                {renderStars()}
+              </div>
             </div>
+            <button className={podcastsStyle.podcastBtn}>
+              <a
+                target="blanc"
+                href="https://shows.acast.com/aufdeutschgesagt"
+                className={podcastsStyle.browseBtn}
+              >
+                Zum Podcast
+              </a>
+            </button>
           </div>
-          <div className={podcastsStyle.rightImg}>
+          {/* <div className={podcastsStyle.rightImg}>
             <img
               src={Studio}
               alt="Studio-img"
               className={podcastsStyle.studioImg}
             />
-          </div>
+          </div> */}
+          {/* <div className={podcastsStyle.cardImg}>
+            <img
+              src={cover}
+              alt="podcastCover "
+              className={podcastsStyle.coverImg}
+            />
+          </div> */}
         </div>
-        <button className={podcastsStyle.podcastBtn}>
-          <a
-            target="blanc" href="https://shows.acast.com/aufdeutschgesagt"
-            className={podcastsStyle.browseBtn}
-          >
-            Zum Podcast
-          </a>
-        </button>
       </div>
     </div>
   );

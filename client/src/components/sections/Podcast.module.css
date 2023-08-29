@@ -1,5 +1,6 @@
 .podcastsSection {
   width: 100%;
+  position: relative;
 }
 
 .podcastsHeader {
@@ -32,57 +33,35 @@
 .Hr {
   width: 80%;
   font: black;
+  margin-bottom: 50px;
 }
 
 .podcastsContent {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 10px;
-  margin-top: 50px;
+  justify-content: center;
+  justify-items: center;
 }
 
-.HeadphonesIcon {
+.reviews {
   display: flex;
-  gap: 18px;
-  margin-bottom: 400px;
+  gap: 10px;
+  margin-top: 50px;
   color: #fece00;
   font-size: 1rem;
   font-weight: 700;
 }
 
-.HeadphonesIcon .reviews_text {
+.reviews .reviews_text {
   color: gray;
-}
-
-.faHeadphones {
-  font-size: 4rem;
-  color: gray;
-}
-
-.rightImg {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 200px;
-}
-
-.studioImg {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 90px;
 }
 
 .podcastBtn {
   background-color: #fece00;
   color: gray;
-  margin-top: 50px;
   margin-bottom: 60px;
   width: 200px;
-  float: right;
-  margin-right: 250px;
+  margin-left: 50px;
 }
 
 .podcastBtn a {
@@ -98,22 +77,25 @@
   color: blue;
 }
 
-
 /*/ card styles
 */
 .cardSection {
+  background-image: url("../../assets/archivetempPodcast Cover.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 700px 595px;
+  width: 80%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  box-shadow: inset 0px 0px 35px rgba(195, 186, 186, 0.2);
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  background-color: black;
-  color: white;
-  width: 400px;
+  width: 800px;
   height: 500px;
   border-radius: 15px;
   padding: 50px;
@@ -122,13 +104,16 @@
 .cardHeader {
   display: flex;
   justify-content: space-around;
-  margin-top: 10px;
+}
+.faHeadphones {
+  margin-top: 30px;
+  color: #fece00;
 }
 
 .cardText {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
   padding: 10px;
   flex-direction: column;
@@ -137,18 +122,22 @@
 
 .cardTextH4 {
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 50px;
   font-weight: 700;
 }
 
 .cardTextPara {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
+  text-align: left;
 }
 
 .playButton {
+  display: flex;
+  gap: 30px;
   font-size: xx-large;
   margin-top: 2rem;
+  color: #fece00;
 }
 
 .faCirclePlay,
@@ -165,21 +154,6 @@
   transform: rotate(45deg);
 }
 
-.cardImg {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-right: 10px;
-  overflow: hidden;
-}
-
-.coverImg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 @media (max-width: 414px) {
   .podcastsHeader {
     display: flex;
@@ -188,173 +162,142 @@
     font-size: x-small;
   }
 
-  .rightImg {
-    display: none;
-  }
-
-  .podcastsContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-  }
-
-  .HeadphonesIcon {
-    margin-top: 0px;
-    margin-bottom: 5px;
-  }
-
-  .faHeadphones {
-    font-size: 2rem;
-  }
-
   .cardSection {
-    margin-left: 0px;
+    width: 90%;
+    background-size: 190px 290px;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+  .faHeadphones {
+    margin-top: 30px;
+    color: #fece00;
+  }
+
+  .cardText {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding: 10px;
+    flex-direction: column;
+    margin-top: 0rem;
+  }
+
+  .cardTextH4 {
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .cardTextPara {
+    font-size: 9px;
+    font-weight: 500;
+    text-align: left;
+  }
+  .playButton {
+    gap: 15px;
+    font-size: large;
+    margin-top: 0rem;
+  }
+  .reviews {
+    display: flex;
+    gap: 0px;
+    margin-top: 0px;
+    color: #fece00;
+    font-size: 0.5rem;
+    font-weight: 700;
+    margin-left: 10px;
   }
 
   .card {
     display: flex;
     flex-direction: column;
-    background-color: black;
-    color: white;
-    width: 300px;
-    height: 330px;
+    width: 200px;
+    height: 100px;
     border-radius: 15px;
-    padding: 20px;
-    margin-top: 10px;
-  }
-
-  .cardHeader {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 0px;
-  }
-
-  .cardImg {
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 50%;
-    /* margin-right: 10px; */
-    overflow: hidden;
-  }
-
-  .faCirclePlay,
-  .faCircleStop {
-    margin-top: 10px;
-    transition: transform 0.3s ease;
-  }
-
-  .cardTextPara {
-    margin: 20px;
-  }
-
-  .cardText {
-    flex-direction: column;
-    margin-top: 1rem;
-  }
-
-  .cardTextH4 {
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-weight: 700;
-  }
-
-  .cardTextPara {
-    font-size: 14px;
-    font-weight: 500;
+    padding: 0px;
   }
 
   .podcastBtn {
-    float: none;
-    margin-left: 25%;
-    margin-right: 0px;
+    background-color: #fece00;
+    color: gray;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    width: 150px;
+    height: 30px;
+    font-size: 9px;
+    margin-left: 6px;
   }
 }
 
 @media (min-width: 415px) and (max-width: 900px) {
-  .rightImg {
-    display: none;
-  }
-
-  .podcastsContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-  }
-
-  .HeadphonesIcon {
-    margin-top: 15px;
-    margin-bottom: 5px;
-  }
-
-  .faHeadphones {
-    font-size: 2rem;
-  }
-
   .cardSection {
-    margin-left: 0px;
-    margin-top: 15px;
+    width: 90%;
+    background-size: 390px 290px;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+  .faHeadphones {
+    margin-top: 30px;
+    color: #fece00;
+    font-size: 1.5rem;
+  }
+  .faCirclePlay {
+    font-size: 1.5rem;
+  }
+
+  .cardText {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding: 10px;
+    flex-direction: column;
+    margin-top: 0rem;
+  }
+
+  .cardTextH4 {
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .cardTextPara {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+  }
+  .playButton {
+    gap: 15px;
+    font-size: large;
+    margin-top: 0rem;
+  }
+  .reviews {
+    display: flex;
+    gap: 3px;
+    margin-top: 0px;
+    color: #fece00;
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-left: 10px;
   }
 
   .card {
     display: flex;
     flex-direction: column;
-    background-color: black;
-    color: white;
-    width: 300px;
-    height: 330px;
+    width: 392px;
+    height: 100px;
     border-radius: 15px;
-    padding: 20px;
-    margin-top: 10px;
-  }
-
-  .cardHeader {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 0px;
-  }
-
-  .cardImg {
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 50%;
-    /* margin-right: 10px; */
-    overflow: hidden;
-  }
-
-  .faCirclePlay,
-  .faCircleStop {
-    margin-top: 10px;
-    transition: transform 0.3s ease;
-  }
-
-  .cardTextPara {
-    margin: 20px;
-  }
-
-  .cardText {
-    flex-direction: column;
-    margin-top: 1rem;
-  }
-
-  .cardTextH4 {
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-weight: 700;
-  }
-
-  .cardTextPara {
-    font-size: 14px;
-    font-weight: 500;
+    padding: 0px;
   }
 
   .podcastBtn {
-    margin-right: 119px;
-    margin-top: 100px;
+    background-color: #fece00;
+    color: gray;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    width: 200px;
+    height: 30px;
+    font-size: 12px;
+    margin-left: 6px;
+    text-align: center;
   }
 }
