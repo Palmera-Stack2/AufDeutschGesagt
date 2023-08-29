@@ -11,7 +11,7 @@ import Support from "../components/sections/Support";
 export default function Home() {
   return (
     <>
-      <Navbar />
+    <Navbar />
       <Hero />
       <Blog />
       <Podcasts />

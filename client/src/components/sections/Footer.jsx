@@ -69,7 +69,7 @@ export default function Footer() {
       </div>
 
       <div className={footerStyle.copyright}>
-        <p>Auf Deutsch Gesagt &copy; 2023</p>
+        <p>Auf Deutsch gesagt &copy; 2023</p>
         <p className={footerStyle.palmera}>
           Palmera Development
           <FontAwesomeIcon className={footerStyle.heart} icon={faHeart} />

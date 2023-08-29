@@ -33,18 +33,20 @@ const Navbar = () => {
               {" "}
               <li >Start</li>{" "}
             </HashLink>
-            <HashLink to={"/#about"}>
+            <HashLink to={"/#blog"}>
               {" "}
-              <li>Über mich</li>{" "}
+              <li>Aktuelles</li>{" "}
             </HashLink>
             <HashLink to={"/#podcasts"}>
               {" "}
               <li>Podcast</li>{" "}
             </HashLink>
-            <HashLink to={"/#blog"}>
+            <HashLink to={"/#about"}>
               {" "}
-              <li>Blog</li>{" "}
+              <li>Über mich</li>{" "}
             </HashLink>
+
+
             <HashLink to={"/#ünterstützen"}>
               {" "}
               <li>Unterstützen</li>{" "}

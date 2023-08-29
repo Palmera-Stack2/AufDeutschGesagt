@@ -36,7 +36,7 @@ function Blog() {
     <div id="blog" className={blogStyle.blogSection}>
       <div className={blogStyle.blogHeader}>
         <h3 className={blogStyle.blogH3}>Auf Deutsch gesagt!</h3>
-        <h2 className={blogStyle.blogH2}>Blog</h2>
+        <h2 className={blogStyle.blogH2}>Aktuelles</h2>
       </div>
 
       <div className={blogStyle.blogHrDiv}>
