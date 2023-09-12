@@ -104,20 +104,7 @@ export default function Podcasts() {
               </a>
             </button>
           </div>
-          {/* <div className={podcastsStyle.rightImg}>
-            <img
-              src={Studio}
-              alt="Studio-img"
-              className={podcastsStyle.studioImg}
-            />
-          </div> */}
-          {/* <div className={podcastsStyle.cardImg}>
-            <img
-              src={cover}
-              alt="podcastCover "
-              className={podcastsStyle.coverImg}
-            />
-          </div> */}
+    
         </div>
       </div>
     </div>
